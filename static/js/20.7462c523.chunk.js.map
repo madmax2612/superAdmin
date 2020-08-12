@@ -1,1 +1,0 @@
-{"version":3,"sources":["Components/MonthlyPass/MonthlyPass.js"],"names":["MonthlyPass"],"mappings":"qGAAA,uEAEaA,EAAc,WACvB,OACI","file":"static/js/20.7462c523.chunk.js","sourcesContent":["import React from 'react'\r\n\r\nexport const MonthlyPass = () => {\r\n    return (\r\n        <div>\r\n            Monthly Pass\r\n        </div>\r\n    )\r\n}\r\n"],"sourceRoot":""}

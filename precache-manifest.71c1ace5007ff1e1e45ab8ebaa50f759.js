@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bafd0df63b6fa5cb086f5b8b80934149",
+    "revision": "90349672e5cb6435c94b1e48851fca18",
     "url": "/superAdmin/index.html"
   },
   {
@@ -16,12 +16,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/superAdmin/static/js/1.2c0b7c88.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9d7ac736696acf405eb0",
-    "url": "/superAdmin/static/js/10.c37e38f3.chunk.js"
+    "revision": "d71a57c79129feab3180",
+    "url": "/superAdmin/static/js/10.3641b4df.chunk.js"
   },
   {
     "revision": "e7cad5e8c80a4a756b57f883a8b131b2",
-    "url": "/superAdmin/static/js/10.c37e38f3.chunk.js.LICENSE.txt"
+    "url": "/superAdmin/static/js/10.3641b4df.chunk.js.LICENSE.txt"
   },
   {
     "revision": "17403c713904fdfeb650",
@@ -32,32 +32,32 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/superAdmin/static/js/11.412f413f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a9cfcb725f71cfa8ae9b",
-    "url": "/superAdmin/static/js/12.58d2c701.chunk.js"
+    "revision": "185ab3af5b25e8daaf9c",
+    "url": "/superAdmin/static/js/12.9c0490a7.chunk.js"
   },
   {
-    "revision": "5f1a874cab8431a5344f",
-    "url": "/superAdmin/static/js/13.fb963b4f.chunk.js"
+    "revision": "f371a74a4938ab4c2ab8",
+    "url": "/superAdmin/static/js/13.ba438568.chunk.js"
   },
   {
-    "revision": "3eede8e2a043e564a60a",
-    "url": "/superAdmin/static/js/14.b3335652.chunk.js"
+    "revision": "dc17b174e3f888b0152e",
+    "url": "/superAdmin/static/js/14.baf80878.chunk.js"
   },
   {
-    "revision": "d0440c039d363f36c1b4",
-    "url": "/superAdmin/static/js/15.b27391fb.chunk.js"
+    "revision": "e9f16517609a357554d1",
+    "url": "/superAdmin/static/js/15.de40512e.chunk.js"
   },
   {
-    "revision": "aed5372dcbce1aabb6f6",
-    "url": "/superAdmin/static/js/16.9383af7a.chunk.js"
+    "revision": "1ed43d74874c9b5b3f81",
+    "url": "/superAdmin/static/js/16.2079815c.chunk.js"
   },
   {
-    "revision": "8e68498f162ed6b8aab8",
-    "url": "/superAdmin/static/js/17.38e661c8.chunk.js"
+    "revision": "33626d0feae13c2ca7b4",
+    "url": "/superAdmin/static/js/17.f06609b4.chunk.js"
   },
   {
-    "revision": "2ee5910e19aba18e742e",
-    "url": "/superAdmin/static/js/18.adf3e316.chunk.js"
+    "revision": "435c9ec565b6ece19aa0",
+    "url": "/superAdmin/static/js/18.fdc48845.chunk.js"
   },
   {
     "revision": "55307165725fa9a8ecde",
@@ -96,36 +96,36 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/superAdmin/static/js/4.ee1925b3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "67ea04060481c80a70e2",
-    "url": "/superAdmin/static/js/7.0930c2ac.chunk.js"
+    "revision": "06685a7d8efdf45c39ff",
+    "url": "/superAdmin/static/js/7.2de99fba.chunk.js"
   },
   {
     "revision": "e7cad5e8c80a4a756b57f883a8b131b2",
-    "url": "/superAdmin/static/js/7.0930c2ac.chunk.js.LICENSE.txt"
+    "url": "/superAdmin/static/js/7.2de99fba.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8b5c105e5045aceea07a",
-    "url": "/superAdmin/static/js/8.f3945e73.chunk.js"
-  },
-  {
-    "revision": "e7cad5e8c80a4a756b57f883a8b131b2",
-    "url": "/superAdmin/static/js/8.f3945e73.chunk.js.LICENSE.txt"
-  },
-  {
-    "revision": "947c7fe4de9891a8934c",
-    "url": "/superAdmin/static/js/9.75c54eeb.chunk.js"
+    "revision": "bfe1ac449cb3001de92e",
+    "url": "/superAdmin/static/js/8.7412df75.chunk.js"
   },
   {
     "revision": "e7cad5e8c80a4a756b57f883a8b131b2",
-    "url": "/superAdmin/static/js/9.75c54eeb.chunk.js.LICENSE.txt"
+    "url": "/superAdmin/static/js/8.7412df75.chunk.js.LICENSE.txt"
+  },
+  {
+    "revision": "b854c520adb5c057b507",
+    "url": "/superAdmin/static/js/9.9b3ff709.chunk.js"
+  },
+  {
+    "revision": "e7cad5e8c80a4a756b57f883a8b131b2",
+    "url": "/superAdmin/static/js/9.9b3ff709.chunk.js.LICENSE.txt"
   },
   {
     "revision": "951046067eb16ae55ce1",
     "url": "/superAdmin/static/js/main.cbde85ae.chunk.js"
   },
   {
-    "revision": "887f72f326f24346946e",
-    "url": "/superAdmin/static/js/runtime-main.ab7aaa96.js"
+    "revision": "8cf46e268e44b64859e7",
+    "url": "/superAdmin/static/js/runtime-main.f9af6bec.js"
   },
   {
     "revision": "39cd4ed62a1f6dcc7a24b0339c61acb3",

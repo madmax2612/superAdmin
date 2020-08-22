@@ -21,7 +21,7 @@ const TicketDispenser = lazy(() =>
   import("../Components/TicketDispenser/TicketDispenser")
 );
 const Settings = lazy(() => import("../Components/Settings/Settings"));
-const Profile = lazy(() => import("../Components/Settings/Profile/Profile"));
+const Profile = lazy(() => import("../Components/ProfilePage/Profile/main"));
 const ChangePassword = lazy(() =>
   import("../Components/ChangePassword/ChangePassword")
 );
@@ -66,11 +66,11 @@ export const Routes = () => {
             path="/otopark/superadmin/ticketdispenser"
             component={TicketDispenser}
           />
-          <Route
+          {/* <Route
             exact
             path="/otopark/superadmin/settings"
             component={Settings}
-          />
+          /> */}
           <Route exact path="/otopark/superadmin/profile" component={Profile} />
           <Route
             exact

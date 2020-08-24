@@ -20,7 +20,7 @@ const MonthlyPass = lazy(() => import("../Components/MonthlyPass/MonthlyPass"));
 const TicketDispenser = lazy(() =>
   import("../Components/TicketDispenser/TicketDispenser")
 );
-const Settings = lazy(() => import("../Components/Settings/Settings"));
+// const Settings = lazy(() => import("../Components/Settings/Settings"));
 const Profile = lazy(() => import("../Components/ProfilePage/Profile/main"));
 const ChangePassword = lazy(() =>
   import("../Components/ChangePassword/ChangePassword")

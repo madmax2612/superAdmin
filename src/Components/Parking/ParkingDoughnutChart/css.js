@@ -9,13 +9,19 @@ export const useStyles = makeStyles(theme => ({
     zIndex: 1
   },
   innerDiv: {
+    textAlign: "center",
     marginTop: "-220px",
-    marginLeft: "112px",
-    marginBottom: "100px",
+    [theme.breakpoints.down("md")]: {
+      textAlign: "center",
+      marginTop: "-205px"
+    },
     [theme.breakpoints.down("sm")]: {
-      marginTop: "-190px",
-      marginLeft: "100px",
-      marginBottom: "100px"
+      textAlign: "center",
+      marginTop: "-190px"
+    },
+    [theme.breakpoints.down("xs")]: {
+      textAlign: "center",
+      marginTop: "-190px"
     }
   },
   dis1: {

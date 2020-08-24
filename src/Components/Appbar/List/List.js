@@ -165,7 +165,7 @@ export const list = [
       />
     ),
     primary: "Settings",
-    to: "/otopark/superadmin/profile"
+    to: "#"
   }
 ];
 

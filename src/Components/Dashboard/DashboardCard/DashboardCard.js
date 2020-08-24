@@ -23,9 +23,13 @@ export default function SimpleCard(props) {
       border: "1px solid #dadde9"
     }
   }))(Tooltip);
-
+  console.log(props);
   return (
-    <Card className={classes.root} style={{ marginRight: "20px" }}>
+    <Card
+      className={classes.root}
+      style={{ marginRight: "20px" }}
+      onClick={props.handleOpenModal}
+    >
       <CardContent>
         <Typography component="p">
           <img className={classes.iconImage} src={props.iconImage} />

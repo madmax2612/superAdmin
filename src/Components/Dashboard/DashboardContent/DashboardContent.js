@@ -10,6 +10,9 @@ import LineChart from "../LineChart/LineChart";
 import BarChart from "../BarChart/BarChart";
 import DoughnutChart from "../DoughnutChart/DoughnutChart";
 import DashboardCard from "../DashboardCard/DashboardCard";
+import Modal from "../../../util/Modal/Modal";
+import Table from "../../../util/Table/Table";
+import TableHeader from "../../../util/TableHeader/TableHeader";
 
 import bike from "../../../assets/icons/dashboardBikeIcon.svg";
 import auto from "../../../assets/icons/dashboardAutoIcon.svg";
@@ -22,6 +25,15 @@ import { useStyles } from "./css";
 
 export default function FullWidthGrid(props) {
   const classes = useStyles();
+  const [openModal, setOpenModal] = React.useState(false);
+
+  const handleOpenModal = () => {
+    setOpenModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setOpenModal(false);
+  };
 
   return (
     <div className={classes.image}>
@@ -42,76 +54,16 @@ export default function FullWidthGrid(props) {
             </div>
           </Toolbar>
         </div>
-        {/* appbar start */}
-        {/* <div className={classes.grow}>
-          <AppBar
-            position="static"
-            // style={{ display: "flex", backgroundColor: "white" }}
-          >
-            <Toolbar className={classes.cardScroll}>
-              <DashboardCard
-                iconImage={bike}
-                iconNaming="2 Wheeler"
-                vehicleOut="Vehicle Out"
-                vehicleOutNumber="460"
-                vehicleIn="Vehicle In"
-                vehicleInNumber="1000"
-                slots="1200"
-              />
 
-              <DashboardCard
-                iconImage={auto}
-                iconNaming="3 Wheeler"
-                vehicleOut="Vehicle Out"
-                vehicleOutNumber="460"
-                vehicleIn="Vehicle In"
-                vehicleInNumber="1000"
-                slots="1200"
-              />
-
-              <DashboardCard
-                iconImage={car}
-                iconNaming="4 Wheeler"
-                vehicleOut="Vehicle Out"
-                vehicleOutNumber="460"
-                vehicleIn="Vehicle In"
-                vehicleInNumber="1000"
-                slots="1200"
-              />
-
-              <DashboardCard
-                iconImage={jeep}
-                iconNaming="4 Wheeler Commercial"
-                vehicleOut="Vehicle Out"
-                vehicleOutNumber="460"
-                vehicleIn="Vehicle In"
-                vehicleInNumber="1000"
-                slots="1200"
-              />
-
-              <DashboardCard
-                iconImage={truck}
-                iconNaming="Truck"
-                vehicleOut="Vehicle Out"
-                vehicleOutNumber="460"
-                vehicleIn="Vehicle In"
-                vehicleInNumber="1000"
-                slots="1200"
-              />
-
-              <DashboardCard
-                iconImage={ecar}
-                iconNaming="E-Cars"
-                vehicleOut="Vehicle Out"
-                vehicleOutNumber="460"
-                vehicleIn="Vehicle In"
-                vehicleInNumber="1000"
-                slots="1200"
-              />
-            </Toolbar>
-          </AppBar>
-        </div> */}
-        {/* appbar end */}
+        {openModal && (
+          <Modal
+            isOpen={openModal}
+            openModal={handleOpenModal}
+            closeModal={handleCloseModal}
+            table={<Table />}
+            header={<TableHeader />}
+          />
+        )}
         <div>
           <Grid container spacing={1}>
             <Grid
@@ -123,6 +75,7 @@ export default function FullWidthGrid(props) {
               className={classes.containerAdjust}
             >
               <DashboardCard
+                handleOpenModal={handleOpenModal}
                 iconImage={bike}
                 iconNaming="2 Wheeler"
                 vehicleOut="Vehicle Out"

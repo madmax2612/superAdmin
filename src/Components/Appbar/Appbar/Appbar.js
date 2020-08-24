@@ -14,7 +14,7 @@ import Badge from "@material-ui/core/Badge";
 import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
-import Link from "@material-ui/core/Link";
+// import Link from "@material-ui/core/Link";
 import Avatar from "@material-ui/core/Avatar";
 import MenuIcon from "@material-ui/icons/Menu";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
@@ -35,15 +35,15 @@ import InputBase from "@material-ui/core/InputBase";
 import SearchIcon from "@material-ui/icons/Search";
 import List from "../List/List";
 import { useStyles } from "./css";
-import { Redirect } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 
 export default function AppBar1(props) {
   const classes = useStyles();
   const anchorRef = React.useRef(null);
   const [open, setOpen] = React.useState(true);
   const [open1, setOpen1] = React.useState(false);
-  const [redirect,setRedirect]=React.useState(false);
-  
+  const [redirect, setRedirect] = React.useState(false);
+
   const handleDrawerOpen = () => {
     setOpen(true);
   };
@@ -55,9 +55,9 @@ export default function AppBar1(props) {
     setOpen1(prevOpen => !prevOpen);
   };
 
-  const redirectProfile=()=>{
-    setRedirect(true)
-  }
+  const redirectProfile = () => {
+    setRedirect(true);
+  };
   const handleClose = event => {
     if (anchorRef.current && anchorRef.current.contains(event.target)) {
       return;
@@ -66,17 +66,12 @@ export default function AppBar1(props) {
     setOpen1(false);
   };
 
-
-
   function handleListKeyDown(event) {
     if (event.key === "Tab") {
       event.preventDefault();
       setOpen1(false);
     }
   }
-  
-  
-
 
   //  return focus to the button when we transitioned from !open -> open
   const prevOpen = React.useRef(open1);
@@ -89,9 +84,9 @@ export default function AppBar1(props) {
   }, [open1]);
 
   const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
-  
-  if(redirect){
-    return <Redirect to="/otopark/superadmin/profile"/>
+
+  if (redirect) {
+    return <Redirect to="/otopark/superadmin/profile" />;
   }
   return (
     <div className={classes.root}>
@@ -154,8 +149,6 @@ export default function AppBar1(props) {
           </Typography>
           {/* search bar end */}
 
-    
-
           <IconButton color="inherit">
             <Badge badgeContent={14} color="secondary">
               <img src={props.emailIcon} height="20px" />
@@ -216,17 +209,22 @@ export default function AppBar1(props) {
                         id="menu-list-grow"
                         onKeyDown={handleListKeyDown}
                       >
-                        <MenuItem >
-                          Status : Online
-                        </MenuItem>
-                        <Link to="profile">
-                        <MenuItem onClick={()=>redirectProfile()}>
-                         
-                          Profile
+                        <MenuItem>Status : Online</MenuItem>
+                        <Link
+                          to="profile"
+                          style={{ color: "black", textDecoration: "none" }}
+                        >
+                          <MenuItem onClick={() => redirectProfile()}>
+                            Profile
                           </MenuItem>
-                          </Link>
-                        
-                        <MenuItem onClick={handleClose}>Logout</MenuItem>
+                        </Link>
+
+                        <Link
+                          to="/otopark/superadmin/login"
+                          style={{ color: "black", textDecoration: "none" }}
+                        >
+                          <MenuItem onClick={handleClose}>Logout</MenuItem>
+                        </Link>
                       </MenuList>
                     </ClickAwayListener>
                   </Paper>
@@ -246,7 +244,7 @@ export default function AppBar1(props) {
         open={open}
       >
         <div className={classes.toolbarIcon}>
-          <h4 className={classes.toolbarIcon}>otopark SuperAdmin</h4>
+          <h4 className={classes.toolbarIcon}>OICCS Admin</h4>
           <IconButton onClick={handleDrawerClose}>
             <img src={require("../../../assets/icons/menu-barIcon.svg")} />
           </IconButton>

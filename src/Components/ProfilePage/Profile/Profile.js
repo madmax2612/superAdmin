@@ -26,7 +26,7 @@ import { useStyles } from "./css";
 
 export default function FullWidthGrid() {
   const [visible, setVisible] = useState(false);
-  const [redirect, setRedirect]=useState(false)
+  const [redirect, setRedirect] = useState(false);
   const classes = useStyles();
 
   // const history = useHistory();
@@ -43,26 +43,23 @@ export default function FullWidthGrid() {
     setVisible(false);
   };
 
-  const continueRedirect=()=>{
-    
+  const continueRedirect = () => {
     setRedirect(true);
+  };
+
+  if (redirect) {
+    return <Redirect to="/otopark/superadmin/dashboard" />;
   }
-
-  if(redirect){
-    return(
-      <Redirect to="/otopark/superadmin/dashboard"/>
-    )
-  }
-
-
 
   return (
     <div className={classes.mainRoot}>
-      <Grid container
-      direction="row"
-      justify="center"
-      alignItems="center"
-      spacing={1}>
+      <Grid
+        container
+        direction="row"
+        justify="center"
+        alignItems="center"
+        spacing={1}
+      >
         <Grid item xs={12}>
           <br />
           <br />
@@ -75,39 +72,42 @@ export default function FullWidthGrid() {
                   className={classes.heading}
                 >
                   <Link to="/otopark/superadmin/dashboard">
-                  { visible? ''
-                        :
-                        <ArrowBackIcon align="left" style={{ color: "#00BBDC" }} />
-                        }                  
-                        </Link>
+                    {visible ? (
+                      ""
+                    ) : (
+                      <ArrowBackIcon
+                        align="left"
+                        style={{ color: "#00BBDC" }}
+                      />
+                    )}
+                  </Link>
                 </Typography>
                 <Typography variant="h6" className={classes.myProfileText}>
                   My Profile
                 </Typography>
-                            </Toolbar>
+              </Toolbar>
             </div>
           </Grid>
         </Grid>
-       
-        <Grid 
-         container 
-         direction="row"
-         justify="center"
-         alignItems="center"
-        item 
-        xs={12} 
-        sm={12} 
-        md={8} 
-        lg={12}>
-          <Grid
-          lg={6}
-          spacing={1}>
+
+        <Grid
+          container
+          direction="row"
+          justify="center"
+          alignItems="center"
+          item
+          xs={12}
+          sm={12}
+          md={8}
+          lg={12}
+        >
+          <Grid lg={6} spacing={1}>
             {/* img part */}
             {visible ? (
               <>
                 <Grid item xs={12}>
                   <Avatar
-                    style={{ marginTop: "80px" }}
+                    // style={{ marginTop: "80px" }}
                     alt="Remy Sharp"
                     src={require("../../../assets/images/profile.jpg")}
                     className={classes.profileImage}
@@ -186,7 +186,6 @@ export default function FullWidthGrid() {
                       </List>
                     </div>
 
-                   
                     <div align="center">
                       <Button
                         variant="outlined"
@@ -206,15 +205,12 @@ export default function FullWidthGrid() {
                         Cancel
                       </Button>
                     </div>
-
-                
                   </form>
                 </Grid>
               </>
             ) : (
               <>
                 <Grid item xs={12}>
-                 
                   <Avatar
                     alt="Remy Sharp"
                     src={require("../../../assets/images/profile.jpg")}
@@ -243,7 +239,6 @@ export default function FullWidthGrid() {
                     </List>
                   </div>
 
-                
                   <Box
                     align="left"
                     boxShadow={1}
@@ -273,25 +268,20 @@ export default function FullWidthGrid() {
                       </Link>
 
                       <ListItem button onClick={openEditProfile}>
-                      <ListItemIcon>
-                      <EditIcon
-                        style={{ color: "black" }}
-                      />  
+                        <ListItemIcon>
+                          <EditIcon style={{ color: "black" }} />
                         </ListItemIcon>
-                        
+
                         <ListItemText primary="Edit Profile" />
-                    
-                    
-              </ListItem>
+                      </ListItem>
                     </List>
                   </div>
 
-                 
                   <Button
                     variant="outlined"
                     color="primary"
                     className={classes.saveButton}
-                    onClick={()=> continueRedirect()}
+                    onClick={() => continueRedirect()}
                   >
                     Save
                   </Button>
@@ -301,10 +291,9 @@ export default function FullWidthGrid() {
                   <br />
                 </Grid>
               </>
-            )}   
+            )}
           </Grid>
         </Grid>
-      
       </Grid>
     </div>
   );

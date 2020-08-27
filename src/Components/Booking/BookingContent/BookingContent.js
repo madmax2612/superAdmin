@@ -211,7 +211,10 @@ export default function FullWidthGrid() {
           <Grid item sm={12}>
             <br />
             <br />
-            <Paper className={classes.paper}>
+            <Paper
+              className={classes.paper}
+              className={classes.containerAdjust}
+            >
               <BookingBarChart />
             </Paper>
           </Grid>

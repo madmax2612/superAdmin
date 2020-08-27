@@ -28,8 +28,8 @@ function createData(
   date,
   bookingId,
   vehicleId,
-  getIn,
-  getOut,
+  entryTime,
+  exitTime,
   status,
   paymentType,
   action
@@ -39,8 +39,8 @@ function createData(
     date,
     bookingId,
     vehicleId,
-    getIn,
-    getOut,
+    entryTime,
+    exitTime,
     status,
     paymentType,
     action
@@ -77,17 +77,17 @@ const headCells = [
     minWidth: 200
   },
   {
-    id: "getIn",
+    id: "entryTime",
     numeric: true,
     disablePadding: false,
-    label: "Get In",
+    label: "Entry Time",
     minWidth: 150
   },
   {
-    id: "getOut",
+    id: "exitTime",
     numeric: true,
     disablePadding: false,
-    label: "Get Out",
+    label: "Exit Time",
     minWidth: 150
   },
   {
@@ -696,8 +696,8 @@ export default function EnhancedTable() {
                       <TableCell align="center">{row.date}</TableCell>
                       <TableCell align="center">{row.bookingId}</TableCell>
                       <TableCell align="center">{row.vehicleId}</TableCell>
-                      <TableCell align="center">{row.getIn}</TableCell>
-                      <TableCell align="center">{row.getOut}</TableCell>
+                      <TableCell align="center">{row.entryTime}</TableCell>
+                      <TableCell align="center">{row.exitTime}</TableCell>
                       <TableCell align="center">{row.status}</TableCell>
                       <TableCell align="center">{row.paymentType}</TableCell>
                       <TableCell align="center">{row.action}</TableCell>

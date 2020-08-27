@@ -67,6 +67,7 @@ export default function BarChart() {
       enabled: true
       // custom: CustomTooltips
     },
+    responsive: true,
     maintainAspectRatio: false,
     legend: {
       display: false

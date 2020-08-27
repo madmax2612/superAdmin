@@ -26,9 +26,12 @@ import { useStyles } from "./css";
 export default function FullWidthGrid(props) {
   const classes = useStyles();
   const [openModal, setOpenModal] = React.useState(false);
+  const [vehicles, setVehicles] = React.useState();
 
-  const handleOpenModal = () => {
+  const handleOpenModal = value => {
+    console.log(value);
     setOpenModal(true);
+    setVehicles(value);
   };
 
   const handleCloseModal = () => {
@@ -60,6 +63,7 @@ export default function FullWidthGrid(props) {
             isOpen={openModal}
             openModal={handleOpenModal}
             closeModal={handleCloseModal}
+            vehicles={vehicles}
             table={<Table />}
             header={<TableHeader />}
           />
@@ -75,7 +79,9 @@ export default function FullWidthGrid(props) {
               className={classes.containerAdjust}
             >
               <DashboardCard
-                handleOpenModal={handleOpenModal}
+                handleOpenModal={() => {
+                  handleOpenModal("2 Wheeler Table");
+                }}
                 iconImage={bike}
                 iconNaming="2 Wheeler"
                 vehicleOut="Vehicle Out"
@@ -94,6 +100,9 @@ export default function FullWidthGrid(props) {
               className={classes.containerAdjust}
             >
               <DashboardCard
+                handleOpenModal={() => {
+                  handleOpenModal("3 Wheeler Table");
+                }}
                 iconImage={auto}
                 iconNaming="3 Wheeler"
                 vehicleOut="Vehicle Out"
@@ -112,6 +121,9 @@ export default function FullWidthGrid(props) {
               className={classes.containerAdjust}
             >
               <DashboardCard
+                handleOpenModal={() => {
+                  handleOpenModal("4 Wheeler Table");
+                }}
                 iconImage={car}
                 iconNaming="4 Wheeler"
                 vehicleOut="Vehicle Out"
@@ -130,6 +142,9 @@ export default function FullWidthGrid(props) {
               className={classes.containerAdjust}
             >
               <DashboardCard
+                handleOpenModal={() => {
+                  handleOpenModal("4 Wheeler Commercial Table");
+                }}
                 iconImage={jeep}
                 iconNaming="4 Wheeler Commercial"
                 vehicleOut="Vehicle Out"
@@ -148,6 +163,9 @@ export default function FullWidthGrid(props) {
               className={classes.containerAdjust}
             >
               <DashboardCard
+                handleOpenModal={() => {
+                  handleOpenModal("Truck Table");
+                }}
                 iconImage={truck}
                 iconNaming="Truck"
                 vehicleOut="Vehicle Out"
@@ -166,6 +184,9 @@ export default function FullWidthGrid(props) {
               className={classes.containerAdjust}
             >
               <DashboardCard
+                handleOpenModal={() => {
+                  handleOpenModal("E-Cars Table");
+                }}
                 iconImage={ecar}
                 iconNaming="E-Cars"
                 vehicleOut="Vehicle Out"

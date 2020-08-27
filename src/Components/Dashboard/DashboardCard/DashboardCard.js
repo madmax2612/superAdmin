@@ -8,6 +8,7 @@ import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import HelpOutlineIcon from "@material-ui/icons/HelpOutline";
+import InfoIcon from "@material-ui/icons/Info";
 import { useStyles } from "./css";
 
 export default function SimpleCard(props) {
@@ -31,7 +32,23 @@ export default function SimpleCard(props) {
       onClick={props.handleOpenModal}
     >
       <CardContent>
-        <Typography component="p">
+        <div align="right" style={{ marginTop: "-20px", marginRight: "-20px" }}>
+          <HtmlTooltip
+            title={
+              <React.Fragment>
+                <Typography variant="h7" color="inherit">
+                  Click the box to View a detailed list of vehicles entered and
+                  exited
+                </Typography>
+              </React.Fragment>
+            }
+          >
+            <IconButton aria-label="discription">
+              <InfoIcon style={{ color: "#00BBDC" }} />
+            </IconButton>
+          </HtmlTooltip>
+        </div>
+        <Typography component="p" style={{ marginTop: "-20px" }}>
           <img className={classes.iconImage} src={props.iconImage} />
           <p className={classes.iconNaming}>
             <b>{props.iconNaming}</b>

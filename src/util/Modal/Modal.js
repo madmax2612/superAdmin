@@ -44,7 +44,7 @@ export default function ScrollDialog(props) {
         aria-labelledby="scroll-dialog-title"
         aria-describedby="scroll-dialog-description"
       >
-        <DialogTitle id="scroll-dialog-title">2 Wheelers</DialogTitle>
+        <DialogTitle id="scroll-dialog-title">{props.vehicles}</DialogTitle>
         <DialogContent dividers={scroll === "paper"}>
           <DialogContentText
             id="scroll-dialog-description"

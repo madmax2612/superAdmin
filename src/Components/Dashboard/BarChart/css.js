@@ -8,13 +8,9 @@ export const useStyles = makeStyles(theme => ({
     height: "40px"
   },
   // chartDiv: {
-  //   [theme.breakpoints.down("xs")]: {
-  //     display: "block",
-  //     width: "300px"
-  //   },
-  //   [theme.breakpoints.down("sm")]: {
-  //     display: "block",
-  //     width: "340px"
+  //   width: "80vw",
+  //   [theme.breakpoints.up("sm")]: {
+  //     width: "100vw !important"
   //   }
   // },
   paper: {

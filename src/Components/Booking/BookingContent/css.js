@@ -65,6 +65,12 @@ export const useStyles = makeStyles(theme => ({
       width: "100px"
     }
   },
+  containerAdjust: {
+    marginLeft: "0px",
+    [theme.breakpoints.down("sm")]: {
+      marginLeft: "12px"
+    }
+  },
   paper: {
     padding: theme.spacing(0),
     textAlign: "center",

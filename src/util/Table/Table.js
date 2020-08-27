@@ -31,9 +31,10 @@ function createData(
   vehicleType,
   paymentType,
   paymentAmount,
-  Date,
-  getIn,
-  getOut,
+  dateIn,
+  dateOut,
+  timeIn,
+  timeOut,
   parkingDuration,
   monthlyPass
 ) {
@@ -45,9 +46,10 @@ function createData(
     vehicleType,
     paymentType,
     paymentAmount,
-    Date,
-    getIn,
-    getOut,
+    dateIn,
+    dateOut,
+    timeIn,
+    timeOut,
     parkingDuration,
     monthlyPass
   };
@@ -104,24 +106,31 @@ const headCells = [
     minWidth: 150
   },
   {
-    id: "date",
+    id: "dateIn",
     numeric: true,
     disablePadding: false,
-    label: "Date",
+    label: "Date In",
     minWidth: 150
   },
   {
-    id: "getIn",
+    id: "dateOut",
     numeric: true,
     disablePadding: false,
-    label: "Get In",
+    label: "Date Out",
     minWidth: 150
   },
   {
-    id: "getOut",
+    id: "timeIn",
     numeric: true,
     disablePadding: false,
-    label: "Get Out",
+    label: "Time In",
+    minWidth: 150
+  },
+  {
+    id: "timeOut",
+    numeric: true,
+    disablePadding: false,
+    label: "Time Out",
     minWidth: 150
   },
   {
@@ -150,16 +159,12 @@ const rows = [
     "Cash",
     250,
     "23/08/2020",
+    "24/08/2020",
     "07.00 AM",
     "10.00 PM",
     "12 Hours",
     <div>
-      <select
-        style={{ color: "#00BBDC", outline: "0px", border: "1px solid white" }}
-      >
-        <option selected>Yes</option>
-        <option>No</option>
-      </select>
+        Yes
     </div>
   ),
   createData(
@@ -171,16 +176,12 @@ const rows = [
     "Cash",
     250,
     "23/08/2020",
+    "24/08/2020",
     "07.00 AM",
     "10.00 PM",
     "12 Hours",
     <div>
-      <select
-        style={{ color: "#00BBDC", outline: "0px", border: "1px solid white" }}
-      >
-        <option selected>Yes</option>
-        <option>No</option>
-      </select>
+     Yes
     </div>
   ),
   createData(
@@ -192,16 +193,12 @@ const rows = [
     "Cash",
     250,
     "23/08/2020",
+    "24/08/2020",
     "07.00 AM",
     "10.00 PM",
     "12 Hours",
     <div>
-      <select
-        style={{ color: "#00BBDC", outline: "0px", border: "1px solid white" }}
-      >
-        <option selected>Yes</option>
-        <option>No</option>
-      </select>
+      Yes
     </div>
   ),
   createData(
@@ -213,16 +210,12 @@ const rows = [
     "Cash",
     250,
     "23/08/2020",
+    "24/08/2020",
     "07.00 AM",
     "10.00 PM",
     "12 Hours",
     <div>
-      <select
-        style={{ color: "#00BBDC", outline: "0px", border: "1px solid white" }}
-      >
-        <option selected>Yes</option>
-        <option>No</option>
-      </select>
+      Yes
     </div>
   ),
   createData(
@@ -234,16 +227,12 @@ const rows = [
     "Cash",
     250,
     "23/08/2020",
+    "24/08/2020",
     "07.00 AM",
     "10.00 PM",
     "12 Hours",
     <div>
-      <select
-        style={{ color: "#00BBDC", outline: "0px", border: "1px solid white" }}
-      >
-        <option selected>Yes</option>
-        <option>No</option>
-      </select>
+        Yes
     </div>
   ),
   createData(
@@ -255,16 +244,12 @@ const rows = [
     "Cash",
     250,
     "23/08/2020",
+    "24/08/2020",
     "07.00 AM",
     "10.00 PM",
     "12 Hours",
     <div>
-      <select
-        style={{ color: "#00BBDC", outline: "0px", border: "1px solid white" }}
-      >
-        <option selected>Yes</option>
-        <option>No</option>
-      </select>
+      Yes
     </div>
   ),
   createData(
@@ -276,16 +261,12 @@ const rows = [
     "Cash",
     250,
     "23/08/2020",
+    "24/08/2020",
     "07.00 AM",
     "10.00 PM",
     "12 Hours",
     <div>
-      <select
-        style={{ color: "#00BBDC", outline: "0px", border: "1px solid white" }}
-      >
-        <option selected>Yes</option>
-        <option>No</option>
-      </select>
+      Yes
     </div>
   ),
   createData(
@@ -297,16 +278,12 @@ const rows = [
     "Cash",
     250,
     "23/08/2020",
+    "24/08/2020",
     "07.00 AM",
     "10.00 PM",
     "12 Hours",
     <div>
-      <select
-        style={{ color: "#00BBDC", outline: "0px", border: "1px solid white" }}
-      >
-        <option selected>Yes</option>
-        <option>No</option>
-      </select>
+      Yes
     </div>
   ),
   createData(
@@ -318,16 +295,12 @@ const rows = [
     "Cash",
     250,
     "23/08/2020",
+    "24/08/2020",
     "07.00 AM",
     "10.00 PM",
     "12 Hours",
     <div>
-      <select
-        style={{ color: "#00BBDC", outline: "0px", border: "1px solid white" }}
-      >
-        <option selected>Yes</option>
-        <option>No</option>
-      </select>
+      Yes
     </div>
   )
 ];
@@ -515,7 +488,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export default function EnhancedTable() {
+export default function EnhancedTable(props) {
   const classes = useStyles();
   const [order, setOrder] = React.useState("asc");
   const [orderBy, setOrderBy] = React.useState("calories");
@@ -538,6 +511,8 @@ export default function EnhancedTable() {
     }
     setSelected([]);
   };
+
+  // console.log()
 
   const handleClick = (event, name) => {
     const selectedIndex = selected.indexOf(name);
@@ -629,15 +604,18 @@ export default function EnhancedTable() {
                       >
                         {row.bookingId}
                       </TableCell>
-                      <TableCell align="center">{row.name}</TableCell>
+                      <TableCell align="center" key={index}>
+                        {row.name}
+                      </TableCell>
                       <TableCell align="center">{row.mobileNo}</TableCell>
                       <TableCell align="center">{row.vehicleNo}</TableCell>
                       <TableCell align="center">{row.vehicleType}</TableCell>
                       <TableCell align="center">{row.paymentType}</TableCell>
                       <TableCell align="center">{row.paymentAmount}</TableCell>
-                      <TableCell align="center">{row.Date}</TableCell>
-                      <TableCell align="center">{row.getIn}</TableCell>
-                      <TableCell align="center">{row.getOut}</TableCell>
+                      <TableCell align="center">{row.dateIn}</TableCell>
+                      <TableCell align="center">{row.dateOut}</TableCell>
+                      <TableCell align="center">{row.timeIn}</TableCell>
+                      <TableCell align="center">{row.timeOut}</TableCell>
                       <TableCell align="center">
                         {row.parkingDuration}
                       </TableCell>

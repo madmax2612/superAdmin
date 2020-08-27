@@ -95,7 +95,7 @@ const headCells = [
     numeric: true,
     disablePadding: false,
     label: "Parking Enabled Status",
-    minWidth: 150
+    minWidth: 200
   },
   {
     id: "CreatedOn",

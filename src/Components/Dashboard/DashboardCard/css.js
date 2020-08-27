@@ -4,7 +4,7 @@ export const drawerWidth = 240;
 export const useStyles = makeStyles(theme => ({
   root: {
     minWidth: 175,
-    height: "180px",
+    height: "190px",
     paddingBottom: "20px",
     borderRadius: "10px"
     // overflowX: "auto"

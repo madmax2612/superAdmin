@@ -29,7 +29,7 @@ export default function FullWidthGrid() {
         </Typography>
         <Grid container spacing={1}>
           <Grid item xs={12} sm={12} md={4} lg={4}>
-            <Button className={classes.button} variant="outlined">
+            {/* <Button className={classes.button} variant="outlined">
               <img
                 className={classes.image}
                 src={require("../../../assets/icons/hardwareCCTVIcon.svg")}
@@ -41,7 +41,7 @@ export default function FullWidthGrid() {
                 }}
               />
               <b style={{ marginLeft: "20px" }}>CCTV</b>
-            </Button>
+            </Button> */}
             <br />
             <br />
             <Button className={classes.button} variant="outlined">
@@ -70,11 +70,11 @@ export default function FullWidthGrid() {
                   style={{
                     width: "25px",
                     height: "25px",
-                    marginLeft: "-185px",
+                    marginLeft: "-135px",
                     marginTop: "5px"
                   }}
                 />
-                <b style={{ marginLeft: "20px" }}>RFID</b>
+                <b style={{ marginLeft: "20px" }}>FASTag RFID</b>
               </Button>
             </Link>
             <br />

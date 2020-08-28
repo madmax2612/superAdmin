@@ -12,6 +12,8 @@ import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
+import Dropdown from "../../../util/Dropdown/Dropdown";
+import "chartjs-plugin-datalabels";
 import { useStyles } from "./css";
 
 export default function BarChart() {
@@ -39,7 +41,7 @@ export default function BarChart() {
         barThickness: 30,
         hoverBackgroundColor: "white",
         hoverBorderColor: "white",
-        data: [100, 70, 65, 59, 80, 81, 56]
+        data: [9000, 7000, 6500, 5900, 8000, 8100, 5600, 10000]
       }
     ]
   };
@@ -58,6 +60,7 @@ export default function BarChart() {
           scaleLabel: {
             display: true,
             labelString: "Month",
+            fontSize: 15,
             fontStyle: "bold",
             fontColor: "white"
           },
@@ -72,6 +75,7 @@ export default function BarChart() {
           scaleLabel: {
             display: true,
             labelString: "Total Transactions",
+            fontSize: 15,
             fontStyle: "bold",
             fontColor: "white"
           },
@@ -81,6 +85,18 @@ export default function BarChart() {
           }
         }
       ]
+    },
+    plugins: {
+      datalabels: {
+        anchor: "end",
+        align: "top",
+        backgroundColor: "#fff",
+        color: "#262F37",
+        font: {
+          weight: "bold",
+          family: "FontAwesome"
+        }
+      }
     },
     elements: {
       line: {
@@ -111,14 +127,15 @@ export default function BarChart() {
           >
             Overview
           </Typography>
-          <div>
+          <Dropdown />
+          {/* <div>
             <select className={classes.dropdown}>
               <option>Date</option>
               <option selected>Month</option>
               <option>Year</option>
               <option>Date Between</option>
             </select>
-          </div>
+          </div> */}
         </Toolbar>
         <Typography align="left" variant="h5" className={classes.title}>
           Total Transactions

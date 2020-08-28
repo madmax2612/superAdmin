@@ -78,13 +78,13 @@ export default function BarChart() {
           scaleLabel: {
             display: true,
             labelString: "Vehicles",
+            fontSize: 15,
             fontStyle: "bold",
             fontColor: "black"
           },
           ticks: {
             fontColor: "#1D1D1D",
             fontWeight: "bold"
-            // fontSize: 14
           }
         }
       ],
@@ -93,36 +93,27 @@ export default function BarChart() {
           scaleLabel: {
             display: true,
             labelString: "Revenue",
+            fontSize: 15,
             fontStyle: "bold",
             fontColor: "black"
           },
           ticks: {
             fontColor: "#1D1D1D",
             fontWeight: "bold"
-            // fontSize: 14
           }
         }
       ]
     },
     plugins: {
       datalabels: {
-        render: "image",
         anchor: "end",
         align: "top",
-        formatter: Math.round,
         backgroundColor: "#262F37",
         color: "white",
         font: {
           weight: "bold",
           family: "FontAwesome"
-        },
-        images: [
-          {
-            src: "img.svg",
-            width: 16,
-            height: 16
-          }
-        ]
+        }
       }
     },
     elements: {
@@ -155,7 +146,7 @@ export default function BarChart() {
             </Typography>
           </MuiThemeProvider>
 
-          <div className={classes.paper}>
+          <div className={classes.paper} style={{ marginTop: "10px" }}>
             <Typography align="left" variant="h7">
               <b className={classes.totolCollection}>Total Collection</b>
             </Typography>

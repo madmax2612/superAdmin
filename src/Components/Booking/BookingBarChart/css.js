@@ -14,7 +14,7 @@ export const useStyles = makeStyles(theme => ({
   dropdown: {
     backgroundColor: "#00BBDC",
     color: "white",
-    width: "120px",
+    width: "130px",
     height: "40px",
     borderColor: "#00BBDC",
     boder: "1px solid #00BBDC",

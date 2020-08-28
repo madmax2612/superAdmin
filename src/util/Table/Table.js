@@ -123,14 +123,14 @@ const headCells = [
     id: "timeIn",
     numeric: true,
     disablePadding: false,
-    label: "Time In",
+    label: "Entry Time",
     minWidth: 150
   },
   {
     id: "timeOut",
     numeric: true,
     disablePadding: false,
-    label: "Time Out",
+    label: "Exit Time",
     minWidth: 150
   },
   {
@@ -163,9 +163,7 @@ const rows = [
     "07.00 AM",
     "10.00 PM",
     "12 Hours",
-    <div>
-        Yes
-    </div>
+    "Yes"
   ),
   createData(
     123456789,
@@ -180,9 +178,7 @@ const rows = [
     "07.00 AM",
     "10.00 PM",
     "12 Hours",
-    <div>
-     Yes
-    </div>
+    "No"
   ),
   createData(
     123456789,
@@ -197,9 +193,7 @@ const rows = [
     "07.00 AM",
     "10.00 PM",
     "12 Hours",
-    <div>
-      Yes
-    </div>
+    "Yes"
   ),
   createData(
     123456789,
@@ -214,9 +208,7 @@ const rows = [
     "07.00 AM",
     "10.00 PM",
     "12 Hours",
-    <div>
-      Yes
-    </div>
+    "No"
   ),
   createData(
     123456789,
@@ -231,9 +223,7 @@ const rows = [
     "07.00 AM",
     "10.00 PM",
     "12 Hours",
-    <div>
-        Yes
-    </div>
+    "Yes"
   ),
   createData(
     123456789,
@@ -248,9 +238,7 @@ const rows = [
     "07.00 AM",
     "10.00 PM",
     "12 Hours",
-    <div>
-      Yes
-    </div>
+    "Yes"
   ),
   createData(
     123456789,
@@ -265,9 +253,7 @@ const rows = [
     "07.00 AM",
     "10.00 PM",
     "12 Hours",
-    <div>
-      Yes
-    </div>
+    "No"
   ),
   createData(
     123456789,
@@ -282,9 +268,7 @@ const rows = [
     "07.00 AM",
     "10.00 PM",
     "12 Hours",
-    <div>
-      Yes
-    </div>
+    "Yes"
   ),
   createData(
     123456789,
@@ -299,9 +283,7 @@ const rows = [
     "07.00 AM",
     "10.00 PM",
     "12 Hours",
-    <div>
-      Yes
-    </div>
+    "Yes"
   )
 ];
 

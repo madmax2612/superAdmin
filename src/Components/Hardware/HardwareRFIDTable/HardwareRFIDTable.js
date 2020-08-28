@@ -193,7 +193,7 @@ const headCells = [
     numeric: true,
     disablePadding: false,
     label: "Action",
-    minWidth: 150
+    minWidth: 200
   }
 ];
 
@@ -217,24 +217,29 @@ const rows = [
     "07.00 pm",
     "300",
     <div>
-      <Link
-        to="#"
-        style={{
-          color: "#072DEB",
-          fontSize: "12px"
-        }}
-      >
-        View Details
-      </Link>
-      <br />
       <button
         style={{
+          marginRight: "5px",
+          textTransform: "none",
+          backgroundColor: "#00BBDC",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#00BBDC",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        View
+      </button>
+      <button
+        style={{
+          marginRight: "5px",
           textTransform: "none",
           backgroundColor: "#2DCE98",
           color: "white",
           borderRadius: "5px",
           borderColor: "#2DCE98",
-          fontSize: "12px",
+          fontSize: "14px",
           outline: "none"
         }}
       >
@@ -261,24 +266,29 @@ const rows = [
     "07.00 pm",
     "300",
     <div>
-      <Link
-        to="#"
-        style={{
-          color: "#072DEB",
-          fontSize: "12px"
-        }}
-      >
-        View Details
-      </Link>
-      <br />
       <button
         style={{
+          marginRight: "5px",
+          textTransform: "none",
+          backgroundColor: "#00BBDC",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#00BBDC",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        View
+      </button>
+      <button
+        style={{
+          marginRight: "5px",
           textTransform: "none",
           backgroundColor: "#2DCE98",
           color: "white",
           borderRadius: "5px",
           borderColor: "#2DCE98",
-          fontSize: "12px",
+          fontSize: "14px",
           outline: "none"
         }}
       >
@@ -305,24 +315,29 @@ const rows = [
     "07.00 pm",
     "300",
     <div>
-      <Link
-        to="#"
-        style={{
-          color: "#072DEB",
-          fontSize: "12px"
-        }}
-      >
-        View Details
-      </Link>
-      <br />
       <button
         style={{
+          marginRight: "5px",
+          textTransform: "none",
+          backgroundColor: "#00BBDC",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#00BBDC",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        View
+      </button>
+      <button
+        style={{
+          marginRight: "5px",
           textTransform: "none",
           backgroundColor: "#2DCE98",
           color: "white",
           borderRadius: "5px",
           borderColor: "#2DCE98",
-          fontSize: "12px",
+          fontSize: "14px",
           outline: "none"
         }}
       >
@@ -349,24 +364,29 @@ const rows = [
     "07.00 pm",
     "300",
     <div>
-      <Link
-        to="#"
-        style={{
-          color: "#072DEB",
-          fontSize: "12px"
-        }}
-      >
-        View Details
-      </Link>
-      <br />
       <button
         style={{
+          marginRight: "5px",
+          textTransform: "none",
+          backgroundColor: "#00BBDC",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#00BBDC",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        View
+      </button>
+      <button
+        style={{
+          marginRight: "5px",
           textTransform: "none",
           backgroundColor: "#2DCE98",
           color: "white",
           borderRadius: "5px",
           borderColor: "#2DCE98",
-          fontSize: "12px",
+          fontSize: "14px",
           outline: "none"
         }}
       >
@@ -393,24 +413,29 @@ const rows = [
     "07.00 pm",
     "300",
     <div>
-      <Link
-        to="#"
-        style={{
-          color: "#072DEB",
-          fontSize: "12px"
-        }}
-      >
-        View Details
-      </Link>
-      <br />
       <button
         style={{
+          marginRight: "5px",
+          textTransform: "none",
+          backgroundColor: "#00BBDC",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#00BBDC",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        View
+      </button>
+      <button
+        style={{
+          marginRight: "5px",
           textTransform: "none",
           backgroundColor: "#2DCE98",
           color: "white",
           borderRadius: "5px",
           borderColor: "#2DCE98",
-          fontSize: "12px",
+          fontSize: "14px",
           outline: "none"
         }}
       >
@@ -437,24 +462,29 @@ const rows = [
     "07.00 pm",
     "300",
     <div>
-      <Link
-        to="#"
-        style={{
-          color: "#072DEB",
-          fontSize: "12px"
-        }}
-      >
-        View Details
-      </Link>
-      <br />
       <button
         style={{
+          marginRight: "5px",
+          textTransform: "none",
+          backgroundColor: "#00BBDC",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#00BBDC",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        View
+      </button>
+      <button
+        style={{
+          marginRight: "5px",
           textTransform: "none",
           backgroundColor: "#2DCE98",
           color: "white",
           borderRadius: "5px",
           borderColor: "#2DCE98",
-          fontSize: "12px",
+          fontSize: "14px",
           outline: "none"
         }}
       >
@@ -481,24 +511,127 @@ const rows = [
     "07.00 pm",
     "300",
     <div>
-      <Link
-        to="#"
-        style={{
-          color: "#072DEB",
-          fontSize: "12px"
-        }}
-      >
-        View Details
-      </Link>
-      <br />
       <button
         style={{
+          marginRight: "5px",
+          textTransform: "none",
+          backgroundColor: "#00BBDC",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#00BBDC",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        View
+      </button>
+      <button
+        style={{
+          marginRight: "5px",
           textTransform: "none",
           backgroundColor: "#2DCE98",
           color: "white",
           borderRadius: "5px",
           borderColor: "#2DCE98",
-          fontSize: "12px",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        Download
+      </button>
+    </div>
+  ),
+  createData(
+    123456789,
+    123456789,
+    " MH 04 1212",
+    "Car",
+    123456789,
+    "Provisional",
+    "Cash",
+    "Request Payment",
+    123456,
+    "Valid",
+    12345612345,
+    "Krishna A Reddy",
+    "GATE-1",
+    "05.00 pm",
+    "07.00 pm",
+    "07.00 pm",
+    "300",
+    <div>
+      <button
+        style={{
+          marginRight: "5px",
+          textTransform: "none",
+          backgroundColor: "#00BBDC",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#00BBDC",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        View
+      </button>
+      <button
+        style={{
+          marginRight: "5px",
+          textTransform: "none",
+          backgroundColor: "#2DCE98",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#2DCE98",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        Download
+      </button>
+    </div>
+  ),
+  createData(
+    123456789,
+    123456789,
+    " MH 04 1212",
+    "Car",
+    123456789,
+    "Provisional",
+    "Cash",
+    "Request Payment",
+    123456,
+    "Valid",
+    12345612345,
+    "Krishna A Reddy",
+    "GATE-1",
+    "05.00 pm",
+    "07.00 pm",
+    "07.00 pm",
+    "300",
+    <div>
+      <button
+        style={{
+          marginRight: "5px",
+          textTransform: "none",
+          backgroundColor: "#00BBDC",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#00BBDC",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        View
+      </button>
+      <button
+        style={{
+          marginRight: "5px",
+          textTransform: "none",
+          backgroundColor: "#2DCE98",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#2DCE98",
+          fontSize: "14px",
           outline: "none"
         }}
       >

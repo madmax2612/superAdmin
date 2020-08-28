@@ -123,7 +123,21 @@ const rows = [
     <CheckCircleIcon style={{ color: "white", color: "#00C569" }} />,
     <CheckCircleIcon style={{ color: "white", color: "#00C569" }} />,
     "27 Jan 2020",
-    "View Details"
+    <div>
+      <button
+        style={{
+          textTransform: "none",
+          backgroundColor: "#00BBDC",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#00BBDC",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        View
+      </button>
+    </div>
   ),
   createData(
     "zaid",
@@ -134,7 +148,21 @@ const rows = [
     <CheckCircleIcon style={{ color: "white", color: "#00C569" }} />,
     <CheckCircleIcon style={{ color: "white", color: "#00C569" }} />,
     "27 Jan 2020",
-    "View Details"
+    <div>
+      <button
+        style={{
+          textTransform: "none",
+          backgroundColor: "#00BBDC",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#00BBDC",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        View
+      </button>
+    </div>
   ),
   createData(
     "Jahad",
@@ -145,7 +173,21 @@ const rows = [
     <CheckCircleIcon style={{ color: "white", color: "#00C569" }} />,
     <CheckCircleIcon style={{ color: "white", color: "#00C569" }} />,
     "27 Jan 2020",
-    "View Details"
+    <div>
+      <button
+        style={{
+          textTransform: "none",
+          backgroundColor: "#00BBDC",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#00BBDC",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        View
+      </button>
+    </div>
   ),
   createData(
     "Jahad",
@@ -156,7 +198,21 @@ const rows = [
     <CheckCircleIcon style={{ color: "white", color: "#00C569" }} />,
     <CheckCircleIcon style={{ color: "white", color: "#00C569" }} />,
     "27 Jan 2020",
-    "View Details"
+    <div>
+      <button
+        style={{
+          textTransform: "none",
+          backgroundColor: "#00BBDC",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#00BBDC",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        View
+      </button>
+    </div>
   ),
   createData(
     "Jahad",
@@ -167,7 +223,21 @@ const rows = [
     <CheckCircleIcon style={{ color: "white", color: "#00C569" }} />,
     <CheckCircleIcon style={{ color: "white", color: "#00C569" }} />,
     "27 Jan 2020",
-    "View Details"
+    <div>
+      <button
+        style={{
+          textTransform: "none",
+          backgroundColor: "#00BBDC",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#00BBDC",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        View
+      </button>
+    </div>
   ),
   createData(
     "Jahad",
@@ -178,7 +248,21 @@ const rows = [
     <CheckCircleIcon style={{ color: "white", color: "#00C569" }} />,
     <CheckCircleIcon style={{ color: "white", color: "#00C569" }} />,
     "27 Jan 2020",
-    "View Details"
+    <div>
+      <button
+        style={{
+          textTransform: "none",
+          backgroundColor: "#00BBDC",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#00BBDC",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        View
+      </button>
+    </div>
   ),
   createData(
     "Jahad",
@@ -189,7 +273,21 @@ const rows = [
     <CheckCircleIcon style={{ color: "white", color: "#00C569" }} />,
     <CheckCircleIcon style={{ color: "white", color: "#00C569" }} />,
     "27 Jan 2020",
-    "View Details"
+    <div>
+      <button
+        style={{
+          textTransform: "none",
+          backgroundColor: "#00BBDC",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#00BBDC",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        View
+      </button>
+    </div>
   ),
   createData(
     "Jahad",
@@ -200,7 +298,21 @@ const rows = [
     <CheckCircleIcon style={{ color: "white", color: "#00C569" }} />,
     <CheckCircleIcon style={{ color: "white", color: "#00C569" }} />,
     "27 Jan 2020",
-    "View Details"
+    <div>
+      <button
+        style={{
+          textTransform: "none",
+          backgroundColor: "#00BBDC",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#00BBDC",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        View
+      </button>
+    </div>
   ),
   createData(
     "Jahad",
@@ -211,7 +323,21 @@ const rows = [
     <CheckCircleIcon style={{ color: "white", color: "#00C569" }} />,
     <CheckCircleIcon style={{ color: "white", color: "#00C569" }} />,
     "27 Jan 2020",
-    "View Details"
+    <div>
+      <button
+        style={{
+          textTransform: "none",
+          backgroundColor: "#00BBDC",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#00BBDC",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        View
+      </button>
+    </div>
   )
 ];
 

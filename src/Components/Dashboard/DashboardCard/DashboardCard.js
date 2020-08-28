@@ -37,7 +37,7 @@ export default function SimpleCard(props) {
             title={
               <React.Fragment>
                 <Typography variant="h7" color="inherit">
-                  Click the box to View a detailed list of vehicles entered and
+                  Click the box to view a detailed list of vehicles entered and
                   exited
                 </Typography>
               </React.Fragment>

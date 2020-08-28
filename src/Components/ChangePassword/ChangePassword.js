@@ -66,16 +66,17 @@ export default function ChangePassword() {
 
               <div className={classes.paper} style={{ marginTop: "20px" }}>
                 <Typography component="h9" variant="h9">
-                  If you continue. otoPark will send a message to the email
-                  address in your profile. Click the link in the message, and
-                  enter a new password on the page that opens.
+                  Request a password change to your registered email. otopark
+                  will send a message to the email address in your profile.
+                  Click the link in the message, and enter a new password on the
+                  page that opens.
                 </Typography>
                 <form
                   className={classes.form}
                   onSubmit={handleSubmit(onSubmit)}
                 >
                   <label>
-                    <b>User Name</b>
+                    <b>Username</b>
                   </label>
                   <TextField
                     size="small"
@@ -115,7 +116,7 @@ export default function ChangePassword() {
                         color="primary"
                         className={classes.submit}
                       >
-                        Send New Password
+                        Send Password Reset
                       </Button>
                       <br />
                     </Grid>

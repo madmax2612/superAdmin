@@ -114,7 +114,7 @@ const headCells = [
     numeric: true,
     disablePadding: false,
     label: "Action",
-    minWidth: 200
+    minWidth: 300
   }
 ];
 
@@ -130,43 +130,47 @@ const rows = [
     " 28.00",
     " 28.00",
     <div>
-      <Link
-        to="#"
-        style={{
-          color: "#072DEB",
-          fontSize: "10px",
-          align: "center",
-          marginLeft: "25px"
-        }}
-      >
-        View Details
-      </Link>
-      <br />
       <button
         style={{
+          marginRight: "5px",
           textTransform: "none",
-          backgroundColor: "#F53C56",
+          backgroundColor: "#00BBDC",
           color: "white",
           borderRadius: "5px",
-          borderColor: "#F53C56",
-          fontSize: "10px",
+          borderColor: "#00BBDC",
+          fontSize: "14px",
           outline: "none"
         }}
       >
-        Hold Payout
+        View
       </button>
       <button
         style={{
+          marginRight: "5px",
           textTransform: "none",
           backgroundColor: "#2DCE98",
           color: "white",
           borderRadius: "5px",
           borderColor: "#2DCE98",
-          fontSize: "10px",
+          fontSize: "14px",
           outline: "none"
         }}
       >
         Process Payout
+      </button>
+      <button
+        style={{
+          marginRight: "5px",
+          textTransform: "none",
+          backgroundColor: "#F53C56",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#F53C56",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        Hold Payout
       </button>
     </div>
   ),
@@ -181,41 +185,47 @@ const rows = [
     " 28.00",
     " 28.00",
     <div>
-      <Link
-        to="#"
-        style={{
-          color: "#072DEB",
-          fontSize: "10px"
-        }}
-      >
-        View Details
-      </Link>
-      <br />
       <button
         style={{
+          marginRight: "5px",
           textTransform: "none",
-          backgroundColor: "#F53C56",
+          backgroundColor: "#00BBDC",
           color: "white",
           borderRadius: "5px",
-          borderColor: "#F53C56",
-          fontSize: "10px",
+          borderColor: "#00BBDC",
+          fontSize: "14px",
           outline: "none"
         }}
       >
-        Hold Payout
+        View
       </button>
       <button
         style={{
+          marginRight: "5px",
           textTransform: "none",
           backgroundColor: "#2DCE98",
           color: "white",
           borderRadius: "5px",
           borderColor: "#2DCE98",
-          fontSize: "10px",
+          fontSize: "14px",
           outline: "none"
         }}
       >
         Process Payout
+      </button>
+      <button
+        style={{
+          marginRight: "5px",
+          textTransform: "none",
+          backgroundColor: "#F53C56",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#F53C56",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        Hold Payout
       </button>
     </div>
   ),
@@ -230,41 +240,47 @@ const rows = [
     " 28.00",
     " 28.00",
     <div>
-      <Link
-        to="#"
-        style={{
-          color: "#072DEB",
-          fontSize: "10px"
-        }}
-      >
-        View Details
-      </Link>
-      <br />
       <button
         style={{
+          marginRight: "5px",
           textTransform: "none",
-          backgroundColor: "#F53C56",
+          backgroundColor: "#00BBDC",
           color: "white",
           borderRadius: "5px",
-          borderColor: "#F53C56",
-          fontSize: "10px",
+          borderColor: "#00BBDC",
+          fontSize: "14px",
           outline: "none"
         }}
       >
-        Hold Payout
+        View
       </button>
       <button
         style={{
+          marginRight: "5px",
           textTransform: "none",
           backgroundColor: "#2DCE98",
           color: "white",
           borderRadius: "5px",
           borderColor: "#2DCE98",
-          fontSize: "10px",
+          fontSize: "14px",
           outline: "none"
         }}
       >
         Process Payout
+      </button>
+      <button
+        style={{
+          marginRight: "5px",
+          textTransform: "none",
+          backgroundColor: "#F53C56",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#F53C56",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        Hold Payout
       </button>
     </div>
   ),
@@ -279,41 +295,103 @@ const rows = [
     " 28.00",
     " 28.00",
     <div>
-      <Link
-        to="#"
-        style={{
-          color: "#072DEB",
-          fontSize: "10px"
-        }}
-      >
-        View Details
-      </Link>
-      <br />
       <button
         style={{
+          marginRight: "5px",
           textTransform: "none",
-          backgroundColor: "#F53C56",
+          backgroundColor: "#00BBDC",
           color: "white",
           borderRadius: "5px",
-          borderColor: "#F53C56",
-          fontSize: "10px",
+          borderColor: "#00BBDC",
+          fontSize: "14px",
           outline: "none"
         }}
       >
-        Hold Payout
+        View
       </button>
       <button
         style={{
+          marginRight: "5px",
           textTransform: "none",
           backgroundColor: "#2DCE98",
           color: "white",
           borderRadius: "5px",
           borderColor: "#2DCE98",
-          fontSize: "10px",
+          fontSize: "14px",
           outline: "none"
         }}
       >
         Process Payout
+      </button>
+      <button
+        style={{
+          marginRight: "5px",
+          textTransform: "none",
+          backgroundColor: "#F53C56",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#F53C56",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        Hold Payout
+      </button>
+    </div>
+  ),
+
+  createData(
+    "zaid khan",
+    "8227264657",
+    "khan@gmail.com",
+    " 2020/04/3",
+    "160.00",
+    " 28.00",
+    " 28.00",
+    " 28.00",
+    " 28.00",
+    <div>
+      <button
+        style={{
+          marginRight: "5px",
+          textTransform: "none",
+          backgroundColor: "#00BBDC",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#00BBDC",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        View
+      </button>
+      <button
+        style={{
+          marginRight: "5px",
+          textTransform: "none",
+          backgroundColor: "#2DCE98",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#2DCE98",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        Process Payout
+      </button>
+      <button
+        style={{
+          marginRight: "5px",
+          textTransform: "none",
+          backgroundColor: "#F53C56",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#F53C56",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        Hold Payout
       </button>
     </div>
   ),
@@ -328,41 +406,47 @@ const rows = [
     " 28.00",
     " 28.00",
     <div>
-      <Link
-        to="#"
-        style={{
-          color: "#072DEB",
-          fontSize: "10px"
-        }}
-      >
-        View Details
-      </Link>
-      <br />
       <button
         style={{
+          marginRight: "5px",
           textTransform: "none",
-          backgroundColor: "#F53C56",
+          backgroundColor: "#00BBDC",
           color: "white",
           borderRadius: "5px",
-          borderColor: "#F53C56",
-          fontSize: "10px",
+          borderColor: "#00BBDC",
+          fontSize: "14px",
           outline: "none"
         }}
       >
-        Hold Payout
+        View
       </button>
       <button
         style={{
+          marginRight: "5px",
           textTransform: "none",
           backgroundColor: "#2DCE98",
           color: "white",
           borderRadius: "5px",
           borderColor: "#2DCE98",
-          fontSize: "10px",
+          fontSize: "14px",
           outline: "none"
         }}
       >
         Process Payout
+      </button>
+      <button
+        style={{
+          marginRight: "5px",
+          textTransform: "none",
+          backgroundColor: "#F53C56",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#F53C56",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        Hold Payout
       </button>
     </div>
   ),
@@ -377,41 +461,47 @@ const rows = [
     " 28.00",
     " 28.00",
     <div>
-      <Link
-        to="#"
-        style={{
-          color: "#072DEB",
-          fontSize: "10px"
-        }}
-      >
-        View Details
-      </Link>
-      <br />
       <button
         style={{
+          marginRight: "5px",
           textTransform: "none",
-          backgroundColor: "#F53C56",
+          backgroundColor: "#00BBDC",
           color: "white",
           borderRadius: "5px",
-          borderColor: "#F53C56",
-          fontSize: "10px",
+          borderColor: "#00BBDC",
+          fontSize: "14px",
           outline: "none"
         }}
       >
-        Hold Payout
+        View
       </button>
       <button
         style={{
+          marginRight: "5px",
           textTransform: "none",
           backgroundColor: "#2DCE98",
           color: "white",
           borderRadius: "5px",
           borderColor: "#2DCE98",
-          fontSize: "10px",
+          fontSize: "14px",
           outline: "none"
         }}
       >
         Process Payout
+      </button>
+      <button
+        style={{
+          marginRight: "5px",
+          textTransform: "none",
+          backgroundColor: "#F53C56",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#F53C56",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        Hold Payout
       </button>
     </div>
   ),
@@ -426,41 +516,47 @@ const rows = [
     " 28.00",
     " 28.00",
     <div>
-      <Link
-        to="#"
-        style={{
-          color: "#072DEB",
-          fontSize: "10px"
-        }}
-      >
-        View Details
-      </Link>
-      <br />
       <button
         style={{
+          marginRight: "5px",
           textTransform: "none",
-          backgroundColor: "#F53C56",
+          backgroundColor: "#00BBDC",
           color: "white",
           borderRadius: "5px",
-          borderColor: "#F53C56",
-          fontSize: "10px",
+          borderColor: "#00BBDC",
+          fontSize: "14px",
           outline: "none"
         }}
       >
-        Hold Payout
+        View
       </button>
       <button
         style={{
+          marginRight: "5px",
           textTransform: "none",
           backgroundColor: "#2DCE98",
           color: "white",
           borderRadius: "5px",
           borderColor: "#2DCE98",
-          fontSize: "10px",
+          fontSize: "14px",
           outline: "none"
         }}
       >
         Process Payout
+      </button>
+      <button
+        style={{
+          marginRight: "5px",
+          textTransform: "none",
+          backgroundColor: "#F53C56",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#F53C56",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        Hold Payout
       </button>
     </div>
   )

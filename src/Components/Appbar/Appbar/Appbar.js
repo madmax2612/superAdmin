@@ -33,11 +33,12 @@ import MenuList from "@material-ui/core/MenuList";
 import MessageIcon from "@material-ui/icons/Message";
 import InputBase from "@material-ui/core/InputBase";
 import SearchIcon from "@material-ui/icons/Search";
-import List from "../List/List";
+import NewList from "../List/NewList";
 import { useStyles } from "./css";
 import { Link, Redirect } from "react-router-dom";
 
 export default function AppBar1(props) {
+  console.log(props);
   const classes = useStyles();
   const anchorRef = React.useRef(null);
   const [open, setOpen] = React.useState(true);
@@ -113,7 +114,7 @@ export default function AppBar1(props) {
           >
             <img src={props.menuIcon} />
           </IconButton>
-          {/* search bar */}
+
           <Typography
             component="h1"
             variant="h6"
@@ -121,7 +122,18 @@ export default function AppBar1(props) {
             noWrap
             className={classes.title}
           >
-            <div className={classes.search}>
+            {/* dropdown */}
+            <div style={props.style}>
+              <select className={classes.appbarDropdown} style={props.style1}>
+                <option>Location</option>
+                <option selected>Goregaon (East)</option>
+                <option>Goregaon (West)</option>
+                <option>Goregaon (East)</option>
+              </select>
+            </div>
+
+            {/* search bar */}
+            {/* <div className={classes.search}>
               <div className={classes.searchIcon}>
                 <SearchIcon style={{ color: "grey" }} />
               </div>
@@ -133,21 +145,9 @@ export default function AppBar1(props) {
                 }}
                 inputProps={{ "aria-label": "search" }}
               />
-            </div>
-            <div
-              // style={{ border: "2px solid white" }}
-              className={classes.search}
-              style={props.style}
-            >
-              <select style={props.style1}>
-                <option>Location</option>
-                <option selected>Goregaon (East)</option>
-                <option>Goregaon (West)</option>
-                <option>Goregaon (East)</option>
-              </select>
-            </div>
+            </div> */}
+            {/* search bar end */}
           </Typography>
-          {/* search bar end */}
 
           <IconButton color="inherit">
             <Badge badgeContent={14} color="secondary">
@@ -249,7 +249,7 @@ export default function AppBar1(props) {
             <img src={require("../../../assets/icons/menu-barIcon.svg")} />
           </IconButton>
         </div>
-        <List />
+        <NewList />
       </Drawer>
       <main className={classes.content}>
         <div className={classes.appBarSpacer} />

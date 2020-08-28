@@ -19,6 +19,7 @@ import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
 import InputLabel from "@material-ui/core/InputLabel";
 import Calender from "../../../util/Calender/Calender";
+import Dropdown from "../../../util/Dropdown/Dropdown";
 import { useStyles } from "./css";
 
 export default function PrimarySearchAppBar() {
@@ -43,7 +44,8 @@ export default function PrimarySearchAppBar() {
         style={{ display: "flex", backgroundColor: "white" }}
       >
         <Toolbar className={classes.scroll}>
-          <Calender />
+          {/* <Calender /> */}
+          <Dropdown />
 
           <div align="right">
             <Button

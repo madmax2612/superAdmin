@@ -16,6 +16,7 @@ export const useStyles = makeStyles(theme => ({
     }
   },
   heading: {
+    // fontFamily: "lato",
     flex: 1,
     color: "white",
     marginLeft: "-40px",

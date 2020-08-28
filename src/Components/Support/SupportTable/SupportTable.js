@@ -62,7 +62,13 @@ const headCells = [
     label: "User Mobile"
   },
 
-  { id: "Action", numeric: true, disablePadding: false, label: "Action" }
+  {
+    id: "Action",
+    numeric: true,
+    disablePadding: false,
+    label: "Action",
+    minWidth: 250
+  }
 ];
 
 const rows = [
@@ -73,28 +79,33 @@ const rows = [
     " khan@gmail.com",
     "2536145456",
     <div>
-      <Link
-        to="#"
-        style={{
-          color: "#072DEB",
-          fontSize: "10px"
-        }}
-      >
-        View Details
-      </Link>
-      <br />
       <button
         style={{
+          marginRight: "5px",
+          textTransform: "none",
+          backgroundColor: "#00BBDC",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#00BBDC",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        View
+      </button>
+      <button
+        style={{
+          marginRight: "5px",
           textTransform: "none",
           backgroundColor: "#2DCE98",
           color: "white",
           borderRadius: "5px",
           borderColor: "#2DCE98",
-          fontSize: "10px",
+          fontSize: "14px",
           outline: "none"
         }}
       >
-        View Parking <br /> Details
+        View Parking Details
       </button>
     </div>
   ),
@@ -105,28 +116,33 @@ const rows = [
     " khan@gmail.com",
     "2536145456",
     <div>
-      <Link
-        to="#"
-        style={{
-          color: "#072DEB",
-          fontSize: "10px"
-        }}
-      >
-        View Details
-      </Link>
-      <br />
       <button
         style={{
+          marginRight: "5px",
+          textTransform: "none",
+          backgroundColor: "#00BBDC",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#00BBDC",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        View
+      </button>
+      <button
+        style={{
+          marginRight: "5px",
           textTransform: "none",
           backgroundColor: "#2DCE98",
           color: "white",
           borderRadius: "5px",
           borderColor: "#2DCE98",
-          fontSize: "10px",
+          fontSize: "14px",
           outline: "none"
         }}
       >
-        View Parking <br /> Details
+        View Parking Details
       </button>
     </div>
   ),
@@ -137,28 +153,33 @@ const rows = [
     " khan@gmail.com",
     "2536145456",
     <div>
-      <Link
-        to="#"
-        style={{
-          color: "#072DEB",
-          fontSize: "10px"
-        }}
-      >
-        View Details
-      </Link>
-      <br />
       <button
         style={{
+          marginRight: "5px",
+          textTransform: "none",
+          backgroundColor: "#00BBDC",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#00BBDC",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        View
+      </button>
+      <button
+        style={{
+          marginRight: "5px",
           textTransform: "none",
           backgroundColor: "#2DCE98",
           color: "white",
           borderRadius: "5px",
           borderColor: "#2DCE98",
-          fontSize: "10px",
+          fontSize: "14px",
           outline: "none"
         }}
       >
-        View Parking <br /> Details
+        View Parking Details
       </button>
     </div>
   ),
@@ -169,28 +190,33 @@ const rows = [
     " khan@gmail.com",
     "2536145456",
     <div>
-      <Link
-        to="#"
-        style={{
-          color: "#072DEB",
-          fontSize: "10px"
-        }}
-      >
-        View Details
-      </Link>
-      <br />
       <button
         style={{
+          marginRight: "5px",
+          textTransform: "none",
+          backgroundColor: "#00BBDC",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#00BBDC",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        View
+      </button>
+      <button
+        style={{
+          marginRight: "5px",
           textTransform: "none",
           backgroundColor: "#2DCE98",
           color: "white",
           borderRadius: "5px",
           borderColor: "#2DCE98",
-          fontSize: "10px",
+          fontSize: "14px",
           outline: "none"
         }}
       >
-        View Parking <br /> Details
+        View Parking Details
       </button>
     </div>
   ),
@@ -201,28 +227,33 @@ const rows = [
     " khan@gmail.com",
     "2536145456",
     <div>
-      <Link
-        to="#"
-        style={{
-          color: "#072DEB",
-          fontSize: "10px"
-        }}
-      >
-        View Details
-      </Link>
-      <br />
       <button
         style={{
+          marginRight: "5px",
+          textTransform: "none",
+          backgroundColor: "#00BBDC",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#00BBDC",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        View
+      </button>
+      <button
+        style={{
+          marginRight: "5px",
           textTransform: "none",
           backgroundColor: "#2DCE98",
           color: "white",
           borderRadius: "5px",
           borderColor: "#2DCE98",
-          fontSize: "10px",
+          fontSize: "14px",
           outline: "none"
         }}
       >
-        View Parking <br /> Details
+        View Parking Details
       </button>
     </div>
   ),
@@ -233,28 +264,70 @@ const rows = [
     " khan@gmail.com",
     "2536145456",
     <div>
-      <Link
-        to="#"
-        style={{
-          color: "#072DEB",
-          fontSize: "10px"
-        }}
-      >
-        View Details
-      </Link>
-      <br />
       <button
         style={{
+          marginRight: "5px",
+          textTransform: "none",
+          backgroundColor: "#00BBDC",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#00BBDC",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        View
+      </button>
+      <button
+        style={{
+          marginRight: "5px",
           textTransform: "none",
           backgroundColor: "#2DCE98",
           color: "white",
           borderRadius: "5px",
           borderColor: "#2DCE98",
-          fontSize: "10px",
+          fontSize: "14px",
           outline: "none"
         }}
       >
-        View Parking <br /> Details
+        View Parking Details
+      </button>
+    </div>
+  ),
+  createData(
+    "At42012",
+    "Parking Issues",
+    "I have not received parking tickets",
+    " khan@gmail.com",
+    "2536145456",
+    <div>
+      <button
+        style={{
+          marginRight: "5px",
+          textTransform: "none",
+          backgroundColor: "#00BBDC",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#00BBDC",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        View
+      </button>
+      <button
+        style={{
+          marginRight: "5px",
+          textTransform: "none",
+          backgroundColor: "#2DCE98",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#2DCE98",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        View Parking Details
       </button>
     </div>
   )
@@ -321,6 +394,7 @@ function EnhancedTableHead(props) {
             padding={headCell.disablePadding ? "none" : "default"}
             sortDirection={orderBy === headCell.id ? order : false}
             style={{
+              minWidth: headCell.minWidth,
               backgroundColor: "#00BBDC",
               color: "white",
               fontSize: "14px",

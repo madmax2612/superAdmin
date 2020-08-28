@@ -49,11 +49,12 @@ export const useStyles = makeStyles(theme => ({
   },
   submit: {
     textTransform: "none",
-    // margin: theme.spacing(3, 0, 2),
     backgroundColor: "#00BBDC",
     borderRadius: 50,
     width: "80%",
-    // marginLeft: "25%",
+    display: "block",
+    marginLeft: "auto",
+    marginRight: "auto",
     "&:hover": {
       background: "#fff",
       color: "#00BBDC",

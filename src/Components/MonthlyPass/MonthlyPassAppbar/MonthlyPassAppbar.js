@@ -43,7 +43,7 @@ export default function PrimarySearchAppBar() {
         style={{ display: "flex", backgroundColor: "white" }}
       >
         <Toolbar className={classes.scroll}>
-          |<Calender />
+          <Calender />
           <div>
             <Button
               className={classes.button}

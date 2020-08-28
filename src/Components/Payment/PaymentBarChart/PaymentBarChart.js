@@ -12,6 +12,7 @@ import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
+import "chartjs-plugin-datalabels";
 import { useStyles } from "./css";
 
 export default function BarChart() {
@@ -39,7 +40,7 @@ export default function BarChart() {
         barThickness: 30,
         hoverBackgroundColor: "#26272A",
         hoverBorderColor: "#26272A",
-        data: [85, 100, 70, 65, 59, 80, 76]
+        data: [8500, 10000, 7000, 6500, 5900, 8000, 7600, 12000]
       }
     ]
   };
@@ -61,6 +62,7 @@ export default function BarChart() {
           scaleLabel: {
             display: true,
             labelString: "Month",
+            fontSize: 15,
             fontStyle: "bold",
             fontColor: "black"
           }
@@ -71,11 +73,24 @@ export default function BarChart() {
           scaleLabel: {
             display: true,
             labelString: "Users",
+            fontSize: 15,
             fontStyle: "bold",
             fontColor: "black"
           }
         }
       ]
+    },
+    plugins: {
+      datalabels: {
+        anchor: "end",
+        align: "top",
+        backgroundColor: "#262F37",
+        color: "white",
+        font: {
+          weight: "bold",
+          family: "FontAwesome"
+        }
+      }
     },
     elements: {
       line: {

@@ -164,5 +164,10 @@ export const useStyles = makeStyles(theme => ({
     [theme.breakpoints.up("md")]: {
       display: "flex"
     }
+  },
+  appbarDropdown: {
+    backgroundColor: "#F7FAFC",
+    fontSize: "18px",
+    outline: "0px"
   }
 }));

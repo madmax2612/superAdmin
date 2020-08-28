@@ -184,41 +184,33 @@ const rows = [
     "07.00 pm",
     "300",
     <div>
-      <Link
-        to="#"
-        style={{
-          color: "#072DEB",
-          fontSize: "12px"
-        }}
-      >
-        View Details
-      </Link>
-      <br />
       <button
         style={{
-          textTransform: "none",
-          backgroundColor: "#2DCE98",
-          color: "white",
-          borderRadius: "5px",
-          borderColor: "#2DCE98",
-          fontSize: "12px",
-          outline: "none"
-        }}
-      >
-        Download
-      </button>
-      <button
-        style={{
+          marginRight: "5px",
           textTransform: "none",
           backgroundColor: "#00BBDC",
           color: "white",
           borderRadius: "5px",
           borderColor: "#00BBDC",
-          fontSize: "12px",
+          fontSize: "14px",
           outline: "none"
         }}
       >
-        View Details
+        View
+      </button>
+      <button
+        style={{
+          marginRight: "5px",
+          textTransform: "none",
+          backgroundColor: "#2DCE98",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#2DCE98",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        Download
       </button>
     </div>
   ),
@@ -238,41 +230,33 @@ const rows = [
     "07.00 pm",
     "300",
     <div>
-      <Link
-        to="#"
-        style={{
-          color: "#072DEB",
-          fontSize: "12px"
-        }}
-      >
-        View Details
-      </Link>
-      <br />
       <button
         style={{
-          textTransform: "none",
-          backgroundColor: "#2DCE98",
-          color: "white",
-          borderRadius: "5px",
-          borderColor: "#2DCE98",
-          fontSize: "12px",
-          outline: "none"
-        }}
-      >
-        Download
-      </button>
-      <button
-        style={{
+          marginRight: "5px",
           textTransform: "none",
           backgroundColor: "#00BBDC",
           color: "white",
           borderRadius: "5px",
           borderColor: "#00BBDC",
-          fontSize: "12px",
+          fontSize: "14px",
           outline: "none"
         }}
       >
-        View Details
+        View
+      </button>
+      <button
+        style={{
+          marginRight: "5px",
+          textTransform: "none",
+          backgroundColor: "#2DCE98",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#2DCE98",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        Download
       </button>
     </div>
   ),
@@ -292,41 +276,33 @@ const rows = [
     "07.00 pm",
     "300",
     <div>
-      <Link
-        to="#"
-        style={{
-          color: "#072DEB",
-          fontSize: "12px"
-        }}
-      >
-        View Details
-      </Link>
-      <br />
       <button
         style={{
-          textTransform: "none",
-          backgroundColor: "#2DCE98",
-          color: "white",
-          borderRadius: "5px",
-          borderColor: "#2DCE98",
-          fontSize: "12px",
-          outline: "none"
-        }}
-      >
-        Download
-      </button>
-      <button
-        style={{
+          marginRight: "5px",
           textTransform: "none",
           backgroundColor: "#00BBDC",
           color: "white",
           borderRadius: "5px",
           borderColor: "#00BBDC",
-          fontSize: "12px",
+          fontSize: "14px",
           outline: "none"
         }}
       >
-        View Details
+        View
+      </button>
+      <button
+        style={{
+          marginRight: "5px",
+          textTransform: "none",
+          backgroundColor: "#2DCE98",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#2DCE98",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        Download
       </button>
     </div>
   ),
@@ -346,41 +322,33 @@ const rows = [
     "07.00 pm",
     "300",
     <div>
-      <Link
-        to="#"
-        style={{
-          color: "#072DEB",
-          fontSize: "12px"
-        }}
-      >
-        View Details
-      </Link>
-      <br />
       <button
         style={{
-          textTransform: "none",
-          backgroundColor: "#2DCE98",
-          color: "white",
-          borderRadius: "5px",
-          borderColor: "#2DCE98",
-          fontSize: "12px",
-          outline: "none"
-        }}
-      >
-        Download
-      </button>
-      <button
-        style={{
+          marginRight: "5px",
           textTransform: "none",
           backgroundColor: "#00BBDC",
           color: "white",
           borderRadius: "5px",
           borderColor: "#00BBDC",
-          fontSize: "12px",
+          fontSize: "14px",
           outline: "none"
         }}
       >
-        View Details
+        View
+      </button>
+      <button
+        style={{
+          marginRight: "5px",
+          textTransform: "none",
+          backgroundColor: "#2DCE98",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#2DCE98",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        Download
       </button>
     </div>
   ),
@@ -400,41 +368,33 @@ const rows = [
     "07.00 pm",
     "300",
     <div>
-      <Link
-        to="#"
-        style={{
-          color: "#072DEB",
-          fontSize: "12px"
-        }}
-      >
-        View Details
-      </Link>
-      <br />
       <button
         style={{
-          textTransform: "none",
-          backgroundColor: "#2DCE98",
-          color: "white",
-          borderRadius: "5px",
-          borderColor: "#2DCE98",
-          fontSize: "12px",
-          outline: "none"
-        }}
-      >
-        Download
-      </button>
-      <button
-        style={{
+          marginRight: "5px",
           textTransform: "none",
           backgroundColor: "#00BBDC",
           color: "white",
           borderRadius: "5px",
           borderColor: "#00BBDC",
-          fontSize: "12px",
+          fontSize: "14px",
           outline: "none"
         }}
       >
-        View Details
+        View
+      </button>
+      <button
+        style={{
+          marginRight: "5px",
+          textTransform: "none",
+          backgroundColor: "#2DCE98",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#2DCE98",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        Download
       </button>
     </div>
   ),
@@ -454,41 +414,33 @@ const rows = [
     "07.00 pm",
     "300",
     <div>
-      <Link
-        to="#"
-        style={{
-          color: "#072DEB",
-          fontSize: "12px"
-        }}
-      >
-        View Details
-      </Link>
-      <br />
       <button
         style={{
-          textTransform: "none",
-          backgroundColor: "#2DCE98",
-          color: "white",
-          borderRadius: "5px",
-          borderColor: "#2DCE98",
-          fontSize: "12px",
-          outline: "none"
-        }}
-      >
-        Download
-      </button>
-      <button
-        style={{
+          marginRight: "5px",
           textTransform: "none",
           backgroundColor: "#00BBDC",
           color: "white",
           borderRadius: "5px",
           borderColor: "#00BBDC",
-          fontSize: "12px",
+          fontSize: "14px",
           outline: "none"
         }}
       >
-        View Details
+        View
+      </button>
+      <button
+        style={{
+          marginRight: "5px",
+          textTransform: "none",
+          backgroundColor: "#2DCE98",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#2DCE98",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        Download
       </button>
     </div>
   ),
@@ -508,41 +460,79 @@ const rows = [
     "07.00 pm",
     "300",
     <div>
-      <Link
-        to="#"
-        style={{
-          color: "#072DEB",
-          fontSize: "12px"
-        }}
-      >
-        View Details
-      </Link>
-      <br />
       <button
         style={{
-          textTransform: "none",
-          backgroundColor: "#2DCE98",
-          color: "white",
-          borderRadius: "5px",
-          borderColor: "#2DCE98",
-          fontSize: "12px",
-          outline: "none"
-        }}
-      >
-        Download
-      </button>
-      <button
-        style={{
+          marginRight: "5px",
           textTransform: "none",
           backgroundColor: "#00BBDC",
           color: "white",
           borderRadius: "5px",
           borderColor: "#00BBDC",
-          fontSize: "12px",
+          fontSize: "14px",
           outline: "none"
         }}
       >
-        View Details
+        View
+      </button>
+      <button
+        style={{
+          marginRight: "5px",
+          textTransform: "none",
+          backgroundColor: "#2DCE98",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#2DCE98",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        Download
+      </button>
+    </div>
+  ),
+  createData(
+    123456789,
+    123456789,
+    " MH 04 1212",
+    123456789,
+    "Provisional",
+    "Cash",
+    12345612345,
+    "Krishna A Reddy",
+    "Car",
+    "GATE-1",
+    "05.00 pm",
+    "07.00 pm",
+    "07.00 pm",
+    "300",
+    <div>
+      <button
+        style={{
+          marginRight: "5px",
+          textTransform: "none",
+          backgroundColor: "#00BBDC",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#00BBDC",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        View
+      </button>
+      <button
+        style={{
+          marginRight: "5px",
+          textTransform: "none",
+          backgroundColor: "#2DCE98",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#2DCE98",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        Download
       </button>
     </div>
   )

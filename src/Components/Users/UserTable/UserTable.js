@@ -53,7 +53,7 @@ const headCells = [
     id: "doj",
     numeric: true,
     disablePadding: false,
-    label: "DOJ"
+    label: "D.O.J"
   },
   {
     id: "aadharID",
@@ -72,41 +72,47 @@ const rows = [
     "24 / 02 / 2020",
     123456789123,
     <div>
-      <Link
-        to="#"
-        style={{
-          color: "#072DEB",
-          fontSize: "12px"
-        }}
-      >
-        View Details
-      </Link>
-      <br />
       <button
         style={{
+          marginRight: "5px",
+          textTransform: "none",
+          backgroundColor: "#00BBDC",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#00BBDC",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        View
+      </button>
+      <button
+        style={{
+          marginRight: "5px",
           textTransform: "none",
           backgroundColor: "#F29122",
           color: "white",
           borderRadius: "5px",
           borderColor: "#F29122",
-          fontSize: "12px",
+          fontSize: "14px",
           outline: "none"
         }}
       >
-        Block User
+        Block
       </button>
       <button
         style={{
+          marginRight: "5px",
           textTransform: "none",
           backgroundColor: "#F53C56",
           color: "white",
           borderRadius: "5px",
           borderColor: "#F53C56",
-          fontSize: "12px",
+          fontSize: "14px",
           outline: "none"
         }}
       >
-        Delete User
+        Delete
       </button>
     </div>
   ),
@@ -117,41 +123,47 @@ const rows = [
     "24 / 02 / 2020",
     123456789123,
     <div>
-      <Link
-        to="#"
-        style={{
-          color: "#072DEB",
-          fontSize: "12px"
-        }}
-      >
-        View Details
-      </Link>
-      <br />
       <button
         style={{
+          marginRight: "5px",
+          textTransform: "none",
+          backgroundColor: "#00BBDC",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#00BBDC",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        View
+      </button>
+      <button
+        style={{
+          marginRight: "5px",
           textTransform: "none",
           backgroundColor: "#F29122",
           color: "white",
           borderRadius: "5px",
           borderColor: "#F29122",
-          fontSize: "12px",
+          fontSize: "14px",
           outline: "none"
         }}
       >
-        Block User
+        Block
       </button>
       <button
         style={{
+          marginRight: "5px",
           textTransform: "none",
           backgroundColor: "#F53C56",
           color: "white",
           borderRadius: "5px",
           borderColor: "#F53C56",
-          fontSize: "12px",
+          fontSize: "14px",
           outline: "none"
         }}
       >
-        Delete User
+        Delete
       </button>
     </div>
   ),
@@ -162,41 +174,47 @@ const rows = [
     "24 / 02 / 2020",
     123456789123,
     <div>
-      <Link
-        to="#"
-        style={{
-          color: "#072DEB",
-          fontSize: "12px"
-        }}
-      >
-        View Details
-      </Link>
-      <br />
       <button
         style={{
+          marginRight: "5px",
+          textTransform: "none",
+          backgroundColor: "#00BBDC",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#00BBDC",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        View
+      </button>
+      <button
+        style={{
+          marginRight: "5px",
           textTransform: "none",
           backgroundColor: "#F29122",
           color: "white",
           borderRadius: "5px",
           borderColor: "#F29122",
-          fontSize: "12px",
+          fontSize: "14px",
           outline: "none"
         }}
       >
-        Block User
+        Block
       </button>
       <button
         style={{
+          marginRight: "5px",
           textTransform: "none",
           backgroundColor: "#F53C56",
           color: "white",
           borderRadius: "5px",
           borderColor: "#F53C56",
-          fontSize: "12px",
+          fontSize: "14px",
           outline: "none"
         }}
       >
-        Delete User
+        Delete
       </button>
     </div>
   ),
@@ -207,41 +225,47 @@ const rows = [
     "24 / 02 / 2020",
     123456789123,
     <div>
-      <Link
-        to="#"
-        style={{
-          color: "#072DEB",
-          fontSize: "12px"
-        }}
-      >
-        View Details
-      </Link>
-      <br />
       <button
         style={{
+          marginRight: "5px",
+          textTransform: "none",
+          backgroundColor: "#00BBDC",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#00BBDC",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        View
+      </button>
+      <button
+        style={{
+          marginRight: "5px",
           textTransform: "none",
           backgroundColor: "#F29122",
           color: "white",
           borderRadius: "5px",
           borderColor: "#F29122",
-          fontSize: "12px",
+          fontSize: "14px",
           outline: "none"
         }}
       >
-        Block User
+        Block
       </button>
       <button
         style={{
+          marginRight: "5px",
           textTransform: "none",
           backgroundColor: "#F53C56",
           color: "white",
           borderRadius: "5px",
           borderColor: "#F53C56",
-          fontSize: "12px",
+          fontSize: "14px",
           outline: "none"
         }}
       >
-        Delete User
+        Delete
       </button>
     </div>
   ),
@@ -252,41 +276,47 @@ const rows = [
     "24 / 02 / 2020",
     123456789123,
     <div>
-      <Link
-        to="#"
-        style={{
-          color: "#072DEB",
-          fontSize: "12px"
-        }}
-      >
-        View Details
-      </Link>
-      <br />
       <button
         style={{
+          marginRight: "5px",
+          textTransform: "none",
+          backgroundColor: "#00BBDC",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#00BBDC",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        View
+      </button>
+      <button
+        style={{
+          marginRight: "5px",
           textTransform: "none",
           backgroundColor: "#F29122",
           color: "white",
           borderRadius: "5px",
           borderColor: "#F29122",
-          fontSize: "12px",
+          fontSize: "14px",
           outline: "none"
         }}
       >
-        Block User
+        Block
       </button>
       <button
         style={{
+          marginRight: "5px",
           textTransform: "none",
           backgroundColor: "#F53C56",
           color: "white",
           borderRadius: "5px",
           borderColor: "#F53C56",
-          fontSize: "12px",
+          fontSize: "14px",
           outline: "none"
         }}
       >
-        Delete User
+        Delete
       </button>
     </div>
   ),
@@ -297,41 +327,47 @@ const rows = [
     "24 / 02 / 2020",
     123456789123,
     <div>
-      <Link
-        to="#"
-        style={{
-          color: "#072DEB",
-          fontSize: "12px"
-        }}
-      >
-        View Details
-      </Link>
-      <br />
       <button
         style={{
+          marginRight: "5px",
+          textTransform: "none",
+          backgroundColor: "#00BBDC",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#00BBDC",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        View
+      </button>
+      <button
+        style={{
+          marginRight: "5px",
           textTransform: "none",
           backgroundColor: "#F29122",
           color: "white",
           borderRadius: "5px",
           borderColor: "#F29122",
-          fontSize: "12px",
+          fontSize: "14px",
           outline: "none"
         }}
       >
-        Block User
+        Block
       </button>
       <button
         style={{
+          marginRight: "5px",
           textTransform: "none",
           backgroundColor: "#F53C56",
           color: "white",
           borderRadius: "5px",
           borderColor: "#F53C56",
-          fontSize: "12px",
+          fontSize: "14px",
           outline: "none"
         }}
       >
-        Delete User
+        Delete
       </button>
     </div>
   ),
@@ -342,41 +378,47 @@ const rows = [
     "24 / 02 / 2020",
     123456789123,
     <div>
-      <Link
-        to="#"
-        style={{
-          color: "#072DEB",
-          fontSize: "12px"
-        }}
-      >
-        View Details
-      </Link>
-      <br />
       <button
         style={{
+          marginRight: "5px",
+          textTransform: "none",
+          backgroundColor: "#00BBDC",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#00BBDC",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        View
+      </button>
+      <button
+        style={{
+          marginRight: "5px",
           textTransform: "none",
           backgroundColor: "#F29122",
           color: "white",
           borderRadius: "5px",
           borderColor: "#F29122",
-          fontSize: "12px",
+          fontSize: "14px",
           outline: "none"
         }}
       >
-        Block User
+        Block
       </button>
       <button
         style={{
+          marginRight: "5px",
           textTransform: "none",
           backgroundColor: "#F53C56",
           color: "white",
           borderRadius: "5px",
           borderColor: "#F53C56",
-          fontSize: "12px",
+          fontSize: "14px",
           outline: "none"
         }}
       >
-        Delete User
+        Delete
       </button>
     </div>
   )

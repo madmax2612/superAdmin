@@ -4,10 +4,8 @@ import Appbar from "../Appbar/Appbar/Appbar";
 import whiteEmail from "../../assets/icons/emailIcon.svg";
 import whiteBell from "../../assets/icons/whiteBellIcon.svg";
 import whiteMenu from "../../assets/icons/whiteMenu-barCloseIcon.svg";
-import Drawer from "../../Components/Appbar/Drawer";
 
 export default function Dashboard(props) {
-  console.log(props);
   return (
     <div>
       <Appbar
@@ -27,7 +25,6 @@ export default function Dashboard(props) {
         }}
         page={<Content />}
       />
-      {/* <Drawer /> */}
     </div>
   );
 }

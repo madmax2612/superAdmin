@@ -4,15 +4,12 @@ import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import Toolbar from "@material-ui/core/Toolbar";
-import AppBar from "@material-ui/core/AppBar";
-import PieChart from "../PieChart/PieChart";
-import LineChart from "../LineChart/LineChart";
 import BarChart from "../BarChart/BarChart";
-import DoughnutChart from "../DoughnutChart/DoughnutChart";
 import DashboardCard from "../DashboardCard/DashboardCard";
 import Modal from "../../../util/Modal/Modal";
 import Table from "../../../util/Table/Table";
 import TableHeader from "../../../util/TableHeader/TableHeader";
+import Dropdown from "../../../util/Dropdown/Dropdown";
 
 import bike from "../../../assets/icons/dashboardBikeIcon.svg";
 import auto from "../../../assets/icons/dashboardAutoIcon.svg";
@@ -47,14 +44,15 @@ export default function FullWidthGrid(props) {
             <Typography align="left" variant="h4" className={classes.heading}>
               <b>Dashboard</b>
             </Typography>
-            <div>
+            {/* <div>
               <select className={classes.dropdown}>
                 <option>Date</option>
                 <option selected>Month</option>
                 <option>Year</option>
                 <option>Date Between</option>
               </select>
-            </div>
+            </div> */}
+            <Dropdown />
           </Toolbar>
         </div>
 

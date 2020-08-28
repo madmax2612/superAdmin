@@ -109,7 +109,7 @@ const headCells = [
     numeric: true,
     disablePadding: false,
     label: "Action",
-    minWidth: 150
+    minWidth: 200
   }
 ];
 
@@ -124,24 +124,29 @@ const rows = [
     "Pending",
     "Cash",
     <div>
-      <Link
-        to="#"
-        style={{
-          color: "#072DEB",
-          fontSize: "10px"
-        }}
-      >
-        View Details
-      </Link>
-      <br />
       <button
         style={{
+          marginRight: "5px",
+          textTransform: "none",
+          backgroundColor: "#00BBDC",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#00BBDC",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        View
+      </button>
+      <button
+        style={{
+          marginRight: "5px",
           textTransform: "none",
           backgroundColor: "#2DCE98",
           color: "white",
           borderRadius: "5px",
           borderColor: "#2DCE98",
-          fontSize: "10px",
+          fontSize: "14px",
           outline: "none"
         }}
       >
@@ -159,24 +164,234 @@ const rows = [
     "Pending",
     "Cash",
     <div>
-      <Link
-        to="#"
-        style={{
-          color: "#072DEB",
-          fontSize: "10px"
-        }}
-      >
-        View Details
-      </Link>
-      <br />
       <button
         style={{
+          marginRight: "5px",
+          textTransform: "none",
+          backgroundColor: "#00BBDC",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#00BBDC",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        View
+      </button>
+      <button
+        style={{
+          marginRight: "5px",
           textTransform: "none",
           backgroundColor: "#2DCE98",
           color: "white",
           borderRadius: "5px",
           borderColor: "#2DCE98",
-          fontSize: "10px",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        Download
+      </button>
+    </div>
+  ),
+
+  createData(
+    "Krishna Reddy",
+    23,
+    241212,
+    123456,
+    "04.00 PM",
+    "07.00 PM",
+    "Pending",
+    "Cash",
+    <div>
+      <button
+        style={{
+          marginRight: "5px",
+          textTransform: "none",
+          backgroundColor: "#00BBDC",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#00BBDC",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        View
+      </button>
+      <button
+        style={{
+          marginRight: "5px",
+          textTransform: "none",
+          backgroundColor: "#2DCE98",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#2DCE98",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        Download
+      </button>
+    </div>
+  ),
+
+  createData(
+    "Krishna Reddy",
+    23,
+    241212,
+    123456,
+    "04.00 PM",
+    "07.00 PM",
+    "Pending",
+    "Cash",
+    <div>
+      <button
+        style={{
+          marginRight: "5px",
+          textTransform: "none",
+          backgroundColor: "#00BBDC",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#00BBDC",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        View
+      </button>
+      <button
+        style={{
+          marginRight: "5px",
+          textTransform: "none",
+          backgroundColor: "#2DCE98",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#2DCE98",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        Download
+      </button>
+    </div>
+  ),
+
+  createData(
+    "Krishna Reddy",
+    23,
+    241212,
+    123456,
+    "04.00 PM",
+    "07.00 PM",
+    "Pending",
+    "Cash",
+    <div>
+      <button
+        style={{
+          marginRight: "5px",
+          textTransform: "none",
+          backgroundColor: "#00BBDC",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#00BBDC",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        View
+      </button>
+      <button
+        style={{
+          marginRight: "5px",
+          textTransform: "none",
+          backgroundColor: "#2DCE98",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#2DCE98",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        Download
+      </button>
+    </div>
+  ),
+
+  createData(
+    "Krishna Reddy",
+    23,
+    241212,
+    123456,
+    "04.00 PM",
+    "07.00 PM",
+    "Pending",
+    "Cash",
+    <div>
+      <button
+        style={{
+          marginRight: "5px",
+          textTransform: "none",
+          backgroundColor: "#00BBDC",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#00BBDC",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        View
+      </button>
+      <button
+        style={{
+          marginRight: "5px",
+          textTransform: "none",
+          backgroundColor: "#2DCE98",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#2DCE98",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        Download
+      </button>
+    </div>
+  ),
+
+  createData(
+    "Krishna Reddy",
+    23,
+    241212,
+    123456,
+    "04.00 PM",
+    "07.00 PM",
+    "Pending",
+    "Cash",
+    <div>
+      <button
+        style={{
+          marginRight: "5px",
+          textTransform: "none",
+          backgroundColor: "#00BBDC",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#00BBDC",
+          fontSize: "14px",
+          outline: "none"
+        }}
+      >
+        View
+      </button>
+      <button
+        style={{
+          marginRight: "5px",
+          textTransform: "none",
+          backgroundColor: "#2DCE98",
+          color: "white",
+          borderRadius: "5px",
+          borderColor: "#2DCE98",
+          fontSize: "14px",
           outline: "none"
         }}
       >
@@ -194,199 +409,29 @@ const rows = [
     "Pending",
     "Cash",
     <div>
-      <Link
-        to="#"
-        style={{
-          color: "#072DEB",
-          fontSize: "10px"
-        }}
-      >
-        View Details
-      </Link>
-      <br />
       <button
         style={{
+          marginRight: "5px",
           textTransform: "none",
-          backgroundColor: "#2DCE98",
+          backgroundColor: "#00BBDC",
           color: "white",
           borderRadius: "5px",
-          borderColor: "#2DCE98",
-          fontSize: "10px",
+          borderColor: "#00BBDC",
+          fontSize: "14px",
           outline: "none"
         }}
       >
-        Download
+        View
       </button>
-    </div>
-  ),
-  createData(
-    "Krishna Reddy",
-    23,
-    241212,
-    123456,
-    "04.00 PM",
-    "07.00 PM",
-    "Pending",
-    "Cash",
-    <div>
-      <Link
-        to="#"
-        style={{
-          color: "#072DEB",
-          fontSize: "10px"
-        }}
-      >
-        View Details
-      </Link>
-      <br />
       <button
         style={{
+          marginRight: "5px",
           textTransform: "none",
           backgroundColor: "#2DCE98",
           color: "white",
           borderRadius: "5px",
           borderColor: "#2DCE98",
-          fontSize: "10px",
-          outline: "none"
-        }}
-      >
-        Download
-      </button>
-    </div>
-  ),
-  createData(
-    "Krishna Reddy",
-    23,
-    241212,
-    123456,
-    "04.00 PM",
-    "07.00 PM",
-    "Pending",
-    "Cash",
-    <div>
-      <Link
-        to="#"
-        style={{
-          color: "#072DEB",
-          fontSize: "10px"
-        }}
-      >
-        View Details
-      </Link>
-      <br />
-      <button
-        style={{
-          textTransform: "none",
-          backgroundColor: "#2DCE98",
-          color: "white",
-          borderRadius: "5px",
-          borderColor: "#2DCE98",
-          fontSize: "10px",
-          outline: "none"
-        }}
-      >
-        Download
-      </button>
-    </div>
-  ),
-  createData(
-    "Krishna Reddy",
-    23,
-    241212,
-    123456,
-    "04.00 PM",
-    "07.00 PM",
-    "Pending",
-    "Cash",
-    <div>
-      <Link
-        to="#"
-        style={{
-          color: "#072DEB",
-          fontSize: "10px"
-        }}
-      >
-        View Details
-      </Link>
-      <br />
-      <button
-        style={{
-          textTransform: "none",
-          backgroundColor: "#2DCE98",
-          color: "white",
-          borderRadius: "5px",
-          borderColor: "#2DCE98",
-          fontSize: "10px",
-          outline: "none"
-        }}
-      >
-        Download
-      </button>
-    </div>
-  ),
-  createData(
-    "Krishna Reddy",
-    23,
-    241212,
-    123456,
-    "04.00 PM",
-    "07.00 PM",
-    "Pending",
-    "Cash",
-    <div>
-      <Link
-        to="#"
-        style={{
-          color: "#072DEB",
-          fontSize: "10px"
-        }}
-      >
-        View Details
-      </Link>
-      <br />
-      <button
-        style={{
-          textTransform: "none",
-          backgroundColor: "#2DCE98",
-          color: "white",
-          borderRadius: "5px",
-          borderColor: "#2DCE98",
-          fontSize: "10px",
-          outline: "none"
-        }}
-      >
-        Download
-      </button>
-    </div>
-  ),
-  createData(
-    "Krishna Reddy",
-    23,
-    241212,
-    123456,
-    "04.00 PM",
-    "07.00 PM",
-    "Pending",
-    "Cash",
-    <div>
-      <Link
-        to="#"
-        style={{
-          color: "#072DEB",
-          fontSize: "10px"
-        }}
-      >
-        View Details
-      </Link>
-      <br />
-      <button
-        style={{
-          textTransform: "none",
-          backgroundColor: "#2DCE98",
-          color: "white",
-          borderRadius: "5px",
-          borderColor: "#2DCE98",
-          fontSize: "10px",
+          fontSize: "14px",
           outline: "none"
         }}
       >

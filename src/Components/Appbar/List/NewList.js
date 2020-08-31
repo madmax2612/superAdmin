@@ -190,7 +190,7 @@ const NestedList = ({ history }) => {
         </ListItem>
       </Link>
 
-      <Link style={{ textDecoration: "none" }} to="#">
+      {/* <Link style={{ textDecoration: "none" }} to="#">
         <ListItem button style={isActive(history, "#")}>
           <ListItemIcon>
             <img
@@ -201,7 +201,7 @@ const NestedList = ({ history }) => {
           </ListItemIcon>
           <ListItemText primary="Location" />
         </ListItem>
-      </Link>
+      </Link> */}
 
       <Link
         style={{ textDecoration: "none" }}
@@ -222,7 +222,7 @@ const NestedList = ({ history }) => {
         </ListItem>
       </Link>
 
-      <Link style={{ textDecoration: "none" }} to="#">
+      {/* <Link style={{ textDecoration: "none" }} to="#">
         <ListItem button style={isActive(history, "#")}>
           <ListItemIcon>
             <img
@@ -233,9 +233,9 @@ const NestedList = ({ history }) => {
           </ListItemIcon>
           <ListItemText primary="Coupons" />
         </ListItem>
-      </Link>
+      </Link> */}
 
-      <Link style={{ textDecoration: "none" }} to="#">
+      {/* <Link style={{ textDecoration: "none" }} to="#">
         <ListItem button style={isActive(history, "#")}>
           <ListItemIcon>
             <img
@@ -246,7 +246,7 @@ const NestedList = ({ history }) => {
           </ListItemIcon>
           <ListItemText primary="Settings" />
         </ListItem>
-      </Link>
+      </Link> */}
     </List>
   );
 };

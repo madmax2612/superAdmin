@@ -14,7 +14,7 @@ function NotFound() {
         />
 
         <div>
-          <h1 style={{ color: "#00BBDC", textAlign: "center" }}>
+          <h1 style={{ color: "#005ce6", textAlign: "center" }}>
             Page Not Found
           </h1>
         </div>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import clsx from "clsx";
 import { lighten, makeStyles } from "@material-ui/core/styles";
@@ -22,6 +22,7 @@ import Switch from "@material-ui/core/Switch";
 import DeleteIcon from "@material-ui/icons/Delete";
 import FilterListIcon from "@material-ui/icons/FilterList";
 import ParkingAppbar from "../ParkingAppbar/ParkingAppbar";
+import axios from "axios";
 
 function createData(
   ListingID,
@@ -377,6 +378,20 @@ function EnhancedTableHead(props) {
     rowCount,
     onRequestSort
   } = props;
+
+  const [items, setItems] = useState("");
+
+  useEffect(() => {
+    axios
+      .get(`https://jsonplaceholder.typicode.com/todos`)
+      .then(res => {
+        console.log(res.data);
+        setItems(res.data);
+      })
+      .catch(err => console.log(err));
+  }, []);
+  console.log(items);
+
   const createSortHandler = property => event => {
     onRequestSort(event, property);
   };

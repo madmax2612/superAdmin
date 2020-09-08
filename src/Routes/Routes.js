@@ -34,7 +34,7 @@ export const Routes = () => {
       <Suspense fallback={<Loader />}>
         <Switch>
           <Route exact path="/otopark/superadmin/login" component={LoginPage} />
-
+          {/* .get(`https://jsonplaceholder.typicode.com/todos`) */}
           <Route
             exact
             path="/otopark/superadmin/dashboard"

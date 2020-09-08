@@ -116,7 +116,10 @@ export default function SignIn(props) {
           title="Contemplative Reptile"
         /> */}
         <Container component="main" maxWidth="xs" className={classes.container}>
-          <Card className={classes.root} style={{ marginTop: "50px" }}>
+          <Card
+            className={classes.root}
+            style={{ marginTop: "0px", zIndex: "1", height: "550px" }}
+          >
             <CardContent>
               <CssBaseline />
               <img
@@ -273,6 +276,7 @@ export default function SignIn(props) {
         </Container>
         <footer
           style={{
+            marginTop: "-300px",
             height: "300px",
             width: "100%",
             display: "flex",

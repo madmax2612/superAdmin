@@ -8,7 +8,6 @@ import Grid from "@material-ui/core/Grid";
 import ParkingTable from "../ParkingTable/ParkingTable";
 import IconButton from "@material-ui/core/IconButton";
 import Tooltip from "@material-ui/core/Tooltip";
-import EnhancedTable from "../SortedTable.js/TableSort";
 import ParkingAppBar from "../ParkingAppbar/ParkingAppbar";
 import ParkingDoughnutChart from "../ParkingDoughnutChart/ParkingDoughnutChart";
 import {
@@ -18,6 +17,7 @@ import {
   Typography
 } from "@material-ui/core";
 import { useStyles } from "./css";
+// import ReuseTable from "../../../util/ReuseTable/ReuseTable";
 
 export default function FullWidthGrid(props) {
   const classes = useStyles();
@@ -197,8 +197,6 @@ export default function FullWidthGrid(props) {
             <Paper className={classes.paper}>
               <ParkingAppBar />
               <ParkingTable />
-              {/* <PrimarySearchAppBar />
-              <EnhancedTable /> */}
             </Paper>
           </Grid>
         </Grid>

@@ -82,13 +82,13 @@ export default function SignIn(props) {
   if (redirect) {
     return <Redirect to="/otopark/superadmin/dashboard" />;
   }
-  const styles = {
-    media: {
-      backgroundColor: "#00BBDC",
-      height: "100vh",
-      marginBottom: "-680px"
-    }
-  };
+  // const styles = {
+  //   media: {
+  //     backgroundColor: "#00BBDC",
+  //     height: "100vh",
+  //     marginBottom: "-680px"
+  //   }
+  // };
 
   return (
     <div>
@@ -101,23 +101,20 @@ export default function SignIn(props) {
         />
       )}
       <div
-      // height="100vh"
-      // image={require("../../assets/images/mumbai.png")}
-      // style={styles.media}
-      // style={{
-      //   height: "100vh",
-      //   backgroundColor: "#00BBDC",
-      //   backgroundImage: require("../../assets/images/LoginPageImg.svg")
-      // }}
+        style={{
+          height: "100vh",
+          backgroundColor: "#00BBDC",
+          backgroundImage: require("../../assets/images/LoginPageImg.svg")
+        }}
       >
-        <CardMedia
+        {/* <CardMedia
           component="img"
           alt="Contemplative Reptile"
           height="140"
           image={require("../../assets/images/mumbai.png")}
           style={styles.media}
           title="Contemplative Reptile"
-        />
+        /> */}
         <Container component="main" maxWidth="xs" className={classes.container}>
           <Card className={classes.root} style={{ marginTop: "50px" }}>
             <CardContent>
@@ -274,7 +271,7 @@ export default function SignIn(props) {
             </CardContent>
           </Card>
         </Container>
-        {/* <footer
+        <footer
           style={{
             height: "300px",
             width: "100%",
@@ -287,7 +284,7 @@ export default function SignIn(props) {
             style={{ width: "100%", height: "auto" }}
             src={require("../../assets/images/mumbai.png")}
           />
-        </footer> */}
+        </footer>
       </div>
     </div>
   );

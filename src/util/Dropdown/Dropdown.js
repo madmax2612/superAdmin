@@ -48,8 +48,18 @@ export default function CustomizedMenus() {
 
   const [startDate, setStartDate] = useState(new Date());
 
-  const [startDate1, setStartDate1] = useState(new Date("2014/02/08"));
-  const [endDate, setEndDate] = useState(new Date("2014/04/08"));
+  const [startDate1, setStartDate1] = useState(new Date());
+  const [endDate, setEndDate] = useState(new Date());
+
+  const [openDate, setOpenDate] = useState(false);
+
+  const handleOpenDate = () => {
+    setOpenDate(true);
+  };
+
+  const handleCloseDate = () => {
+    setOpenDate(false);
+  };
 
   const handleClick = event => {
     setAnchorEl(event.currentTarget);
@@ -64,14 +74,14 @@ export default function CustomizedMenus() {
       className="example-custom-input btn-block"
       onClick={onClick}
       style={{
-        width: "50%",
+        width: "100%",
         marginRight: "5px",
-        padding: " 6px 10px 5px",
-        fontSize: "15px",
+        // padding: " 3px 3px 3px 3px",
+        fontSize: "12px",
         zIndex: "9999",
-        backgroundColor: "#f0f5f7",
+        backgroundColor: "#fff",
         fontWeight: "bold",
-        color: " #00bbdc",
+        color: "#00bbdc",
         borderBottom: "2px solid #00bbdc",
         borderLeft: "2px solid #00bbdc",
         borderRight: "2px solid #00bbdc",
@@ -83,6 +93,7 @@ export default function CustomizedMenus() {
         class="fa fa-calendar"
         aria-hidden="true"
       ></i>
+      {/* {!value ? "Select Date" : value} */}
       {value}
     </button>
   );
@@ -99,7 +110,7 @@ export default function CustomizedMenus() {
       >
         Choose Date
       </Button>
-      <StyledMenu
+      <Menu
         id="customized-menu"
         anchorEl={anchorEl}
         keepMounted
@@ -107,13 +118,9 @@ export default function CustomizedMenus() {
         onClose={handleClose}
       >
         {/* Date */}
-        <div style={{ width: "250px", outline: "0px" }}>
-          <h4 style={{ marginLeft: "10px" }}>Date</h4>
-          <div
-            className="customDatePickerWidth"
-            align="right"
-            style={{ marginTop: "-50px" }}
-          >
+        <MenuItem style={{ height: "40px" }}>
+          <h5 style={{ marginRight: "10px", color: "#00BBDC" }}>Date</h5>
+          <div className="customDatePickerWidth" style={{ marginLeft: "55px" }}>
             <DatePicker
               selected={startDate}
               onChange={date => setStartDate(date)}
@@ -128,21 +135,12 @@ export default function CustomizedMenus() {
               }}
             />
           </div>
-        </div>
-        <Divider
-          style={{
-            marginTop: "10px",
-            borderBottom: "1px solid black"
-          }}
-        />
+        </MenuItem>
+
         {/* Month */}
-        <div style={{ width: "250px" }}>
-          <h4 style={{ marginLeft: "10px" }}>Month</h4>
-          <div
-            className="customDatePickerWidth"
-            align="right"
-            style={{ marginTop: "-50px" }}
-          >
+        <MenuItem style={{ height: "40px" }}>
+          <h5 style={{ marginRight: "10px", color: "#00BBDC" }}>Month</h5>
+          <div className="customDatePickerWidth" style={{ marginLeft: "45px" }}>
             <DatePicker
               selected={startDate}
               onChange={date => setStartDate(date)}
@@ -160,23 +158,13 @@ export default function CustomizedMenus() {
               }}
             />
           </div>
-        </div>
-        <Divider
-          style={{
-            marginTop: "10px",
-            borderBottom: "1px solid black"
-          }}
-        />
+        </MenuItem>
+
         {/* Year */}
-        <div style={{ width: "250px" }}>
-          <h4 style={{ marginLeft: "10px" }}>Year</h4>
-          <div
-            className="customDatePickerWidth"
-            align="right"
-            style={{ marginTop: "-50px" }}
-          >
+        <MenuItem style={{ height: "40px" }}>
+          <h5 style={{ marginRight: "10px", color: "#00BBDC" }}>Year</h5>
+          <div className="customDatePickerWidth" style={{ marginLeft: "56px" }}>
             <DatePicker
-              style={{ marginLeft: "20px" }}
               selected={startDate}
               onChange={date => setStartDate(date)}
               dateFormat="yyyy"
@@ -192,21 +180,14 @@ export default function CustomizedMenus() {
               }}
             />
           </div>
-        </div>
-        <Divider
-          style={{
-            marginTop: "10px",
-            borderBottom: "1px solid black"
-          }}
-        />
+        </MenuItem>
+
         {/* Date Between */}
-        <div style={{ width: "250px" }}>
-          <h4 style={{ marginLeft: "10px" }}>Date Between</h4>
-          <div
-            className="customDatePickerWidth"
-            align="right"
-            style={{ marginTop: "-50px" }}
-          >
+        <MenuItem>
+          <h5 style={{ marginRight: "10px", color: "#00BBDC" }}>
+            Date Between
+          </h5>
+          <div className="customDatePickerWidth">
             <DatePicker
               selected={startDate1}
               onChange={date => setStartDate1(date)}
@@ -243,8 +224,8 @@ export default function CustomizedMenus() {
               }}
             />
           </div>
-        </div>
-      </StyledMenu>
+        </MenuItem>
+      </Menu>
     </div>
   );
 }

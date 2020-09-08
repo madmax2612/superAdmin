@@ -1082,4 +1082,186 @@ export default function NestedList() {
   );
 }
 
+
+
+import React from "react";
+import axios from "axios";
+export const URL = "http://13.233.172.20/api/"; // PROD URL
+// export const URL="http://127.0.0.1:8000/api/" // LOCAL URL
+
+export const ENDPOINTS = {
+  USER_LOGIN: "user/login/",
+  PARKING_LISTINGS: "host/listings/",
+  PRICING: "pricing/getPricingDetails"
+};
+
+export const UserLogin = async body => {
+  return await axios.post(
+    URL + ENDPOINTS.USER_LOGIN,
+    body,
+    {
+      params: ""
+    },
+    {
+      timeout: 3 * 60 * 1000
+    }
+  );
+};
+
+export const GetParkingListings = async () => {
+  return await axios.get(URL + ENDPOINTS.PARKING_LISTINGS, {
+    params: {
+      access_token:
+        "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJtb2JpbGUiOjg0NjAyNzY3OTd9.qfVD9lzabj3J59wqA1eYLb9bb7-_sb6GzLtV9t7HyLw"
+    }
+  });
+};
+
+// export const GetTable = async () => {
+//   return await axios.get(URL + ENDPOINTS.PRICING, {
+//     params: {
+//       access_token:
+//         "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJtb2JpbGUiOjg0NjAyNzY3OTd9.qfVD9lzabj3J59wqA1eYLb9bb7-_sb6GzLtV9t7HyLw",
+//       parking_table_id: 2029
+//     }
+//   });
+// };
+
+
+///////// select file for dropdown ////////
+
+
+import React, { useState, useEffect } from "react";
+import clsx from "clsx";
+import { makeStyles, useTheme } from "@material-ui/core/styles";
+import Input from "@material-ui/core/Input";
+import InputLabel from "@material-ui/core/InputLabel";
+import MenuItem from "@material-ui/core/MenuItem";
+import FormControl from "@material-ui/core/FormControl";
+import ListItemText from "@material-ui/core/ListItemText";
+import Select from "@material-ui/core/Select";
+import Checkbox from "@material-ui/core/Checkbox";
+import Chip from "@material-ui/core/Chip";
+// import { GetLocationListings } from "../../../util/Services/Services";
+
+const useStyles = makeStyles(theme => ({
+  formControl: {
+    margin: theme.spacing(1),
+    minWidth: 200,
+    maxWidth: 300
+  },
+  chips: {
+    display: "flex",
+    flexWrap: "wrap"
+  },
+  chip: {
+    margin: 2
+  },
+  noLabel: {
+    marginTop: theme.spacing(3)
+  },
+  selectBar: {
+    outline: "0px",
+    border: "none",
+    color: "black",
+    borderRadius: "50px",
+    backgroundColor: "#00BBDC"
+  }
+}));
+
+const ITEM_HEIGHT = 48;
+const ITEM_PADDING_TOP = 8;
+const MenuProps = {
+  PaperProps: {
+    style: {
+      maxHeight: ITEM_HEIGHT * 4.5 + ITEM_PADDING_TOP,
+      width: 250
+    }
+  }
+};
+
+const names = [
+  "Goregoan East 1",
+  "Goregoan East 2",
+  "Goregoan East 3",
+  "Goregoan East 4",
+  "Goregoan East",
+  "Goregoan East",
+  "Goregoan East",
+  "Goregoan East",
+  "Goregoan East",
+  "Goregoan East"
+];
+
+function getStyles(name, personName, theme) {
+  return {
+    fontWeight:
+      personName.indexOf(name) === -1
+        ? theme.typography.fontWeightRegular
+        : theme.typography.fontWeightMedium
+  };
+}
+
+export default function MultipleSelect(props) {
+  const classes = useStyles();
+  const theme = useTheme();
+  const [personName, setPersonName] = React.useState([]);
+
+  // const [areaNames, setAreaNames] = useState("");
+
+  // useEffect(() => {
+  //   GetParkingListings()
+  //     .then(res => {
+  //       console.log(res);
+  //       setAreaNames(res.data.parking_list);
+  //     })
+  //     .catch(err => console.log(err));
+  // }, []);
+  // console.log(areaNames);
+
+  const handleChange = event => {
+    setPersonName(event.target.value);
+  };
+
+  const handleChangeMultiple = event => {
+    const { options } = event.target;
+    const value = [];
+    for (let i = 0, l = options.length; i < l; i += 1) {
+      if (options[i].selected) {
+        value.push(options[i].value);
+      }
+    }
+    setPersonName(value);
+  };
+
+  return (
+    <div>
+      <FormControl className={classes.formControl} style={props.style}>
+        {/* <InputLabel id="demo-simple-select-autowidth-label">Age</InputLabel> */}
+        <Select
+          style={props.style1}
+          className={classes.selectBar}
+          labelId="demo-simple-select-outlined-label"
+          id="demo-simple-select-outlined"
+          value={personName}
+          onChange={handleChange}
+          input={<Input disableUnderline={true} />}
+          MenuProps={MenuProps}
+        >
+          <MenuItem>Location</MenuItem>
+          {names.map(name => (
+            <MenuItem
+              key={name}
+              value={name}
+              style={getStyles(name, personName, theme)}
+            >
+              {name}
+            </MenuItem>
+          ))}
+        </Select>
+      </FormControl>
+    </div>
+  );
+}
+
     

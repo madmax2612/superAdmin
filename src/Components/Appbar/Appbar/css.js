@@ -22,12 +22,40 @@ export const useStyles = makeStyles(theme => ({
       flexShrink: 0
     }
   },
-  // appBar: {
-  //   [theme.breakpoints.up("sm")]: {
-  //     width: `calc(100% - ${drawerWidth}px)`,
-  //     marginLeft: drawerWidth
+  formControl: {
+    margin: theme.spacing(1),
+    minWidth: 120,
+    maxWidth: 300
+  },
+  cardScroll: {
+    // padding: "20px",
+    height: "150px",
+    // overflowX: "hidden",
+    overflowY: "scroll"
+    // whiteSpace: "nowrap",
+  },
+
+  // cardScroll: {
+  //   overflowX: "auto",
+  //   padding: "20px",
+  //   backgroundColor: "#00BBDC",
+  //   // listStyle: "none",
+  //   height: "100%",
+  //   "&::-webkit-scrollbar": {
+  //     backgroundColor: "white",
+  //     borderRadius: "20px",
+  //     width: "0.4em"
+  //   },
+  //   "&::-webkit-scrollbar-track": {
+  //     boxShadow: "inset 0 0 6px rgba(0,0,0,0.00)",
+  //     webkitBoxShadow: "inset 0 0 6px rgba(0,0,0,0.00)"
+  //   },
+  //   "&::-webkit-scrollbar-thumb": {
+  //     backgroundColor: "#1D1D1D",
+  //     outline: "1px solid black",
+  //     borderRadius: "20px"
   //   }
-  // },
+  // }
   appBar: {
     zIndex: theme.zIndex.drawer + 1,
     transition: theme.transitions.create(["width", "margin"], {

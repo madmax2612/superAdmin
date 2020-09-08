@@ -7,6 +7,7 @@ import TextField from "@material-ui/core/TextField";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Checkbox from "@material-ui/core/Checkbox";
 import Grid from "@material-ui/core/Grid";
+import CardMedia from "@material-ui/core/CardMedia";
 import Typography from "@material-ui/core/Typography";
 import Container from "@material-ui/core/Container";
 import Card from "@material-ui/core/Card";
@@ -44,8 +45,6 @@ export default function SignIn(props) {
     e.preventDefault();
     console.log(data);
 
-    //    setStoreRanger(data.RangerID)
-    // console.log(data);
     if (data) {
       let formData = new FormData();
       formData.append("mobile", data.mobile);
@@ -56,7 +55,6 @@ export default function SignIn(props) {
         .then(res => {
           console.log(res);
           if (res.data.message == "Success") {
-            console.log("inside success");
             setError(false);
             sessionStorage.setItem("payload", JSON.stringify(res.data));
             setRedirect(true);
@@ -84,6 +82,13 @@ export default function SignIn(props) {
   if (redirect) {
     return <Redirect to="/otopark/superadmin/dashboard" />;
   }
+  const styles = {
+    media: {
+      backgroundColor: "#00BBDC",
+      height: "100vh",
+      marginBottom: "-680px"
+    }
+  };
 
   return (
     <div>
@@ -96,14 +101,25 @@ export default function SignIn(props) {
         />
       )}
       <div
-        style={{
-          height: "100vh",
-          backgroundColor: "#00BBDC",
-          backgroundImage: require("../../assets/images/LoginPageImg.svg")
-        }}
+      // height="100vh"
+      // image={require("../../assets/images/mumbai.png")}
+      // style={styles.media}
+      // style={{
+      //   height: "100vh",
+      //   backgroundColor: "#00BBDC",
+      //   backgroundImage: require("../../assets/images/LoginPageImg.svg")
+      // }}
       >
+        <CardMedia
+          component="img"
+          alt="Contemplative Reptile"
+          height="140"
+          image={require("../../assets/images/mumbai.png")}
+          style={styles.media}
+          title="Contemplative Reptile"
+        />
         <Container component="main" maxWidth="xs" className={classes.container}>
-          <Card className={classes.root}>
+          <Card className={classes.root} style={{ marginTop: "50px" }}>
             <CardContent>
               <CssBaseline />
               <img
@@ -113,7 +129,7 @@ export default function SignIn(props) {
 
               <div className={classes.paper} style={{ marginTop: "20px" }}>
                 <Typography component="h5" variant="h5">
-                  <b>Otopark Admin</b>
+                  <b>OICCS Admin</b>
                 </Typography>
                 <Typography component="h9" variant="h9">
                   Welcome back! Please login to continue
@@ -150,7 +166,7 @@ export default function SignIn(props) {
                   {errors.mobile && errors.mobile.type === "required" && (
                     <div
                       className="container"
-                      style={{ margin: "10px", color: "red" }}
+                      style={{ margin: "10px", color: "red", width: "500px" }}
                     >
                       <div className="row">
                         <i
@@ -188,7 +204,7 @@ export default function SignIn(props) {
                   {errors.password && errors.password.type === "required" && (
                     <div
                       className="container"
-                      style={{ margin: "10px", color: "red" }}
+                      style={{ margin: "10px", color: "red", width: "500px" }}
                     >
                       <div className="row">
                         <i
@@ -201,7 +217,7 @@ export default function SignIn(props) {
                     </div>
                   )}
                   {/* new */}
-                  <div className={classes.forgotcheck}>
+                  {/* <div className={classes.forgotcheck}>
                     <div>
                       <FormControlLabel
                         control={
@@ -225,7 +241,7 @@ export default function SignIn(props) {
                         <p>Forgot password?</p>
                       </Link>
                     </div>
-                  </div>
+                  </div> */}
                   {/* new */}
 
                   <Grid container>
@@ -241,7 +257,7 @@ export default function SignIn(props) {
                         Sign In
                       </Button>
                       <br />
-                      <div align="center">
+                      {/* <div align="center">
                         Now to Product?
                         <Link
                           href="#"
@@ -250,7 +266,7 @@ export default function SignIn(props) {
                         >
                           {"Sign Up"}
                         </Link>
-                      </div>
+                      </div> */}
                     </Grid>
                   </Grid>
                 </form>
@@ -258,7 +274,7 @@ export default function SignIn(props) {
             </CardContent>
           </Card>
         </Container>
-        <footer
+        {/* <footer
           style={{
             height: "300px",
             width: "100%",
@@ -271,7 +287,7 @@ export default function SignIn(props) {
             style={{ width: "100%", height: "auto" }}
             src={require("../../assets/images/mumbai.png")}
           />
-        </footer>
+        </footer> */}
       </div>
     </div>
   );

@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Appbar from "../Appbar/Appbar/Appbar";
 import ParkingContent from "./ParkingContent/ParkingContent";
 import blueEmail from "../../assets/icons/blue-emailIcon.svg";
 import blueBell from "../../assets/icons/blueBellIcon.svg";
 import blueMenu from "../../assets/icons/menu-barCloseIcon.svg";
 
-export default function Parking() {
+export default function Parking(props) {
   return (
     <div>
       <Appbar

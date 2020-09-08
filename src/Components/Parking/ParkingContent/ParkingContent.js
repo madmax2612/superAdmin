@@ -19,7 +19,7 @@ import {
 } from "@material-ui/core";
 import { useStyles } from "./css";
 
-export default function FullWidthGrid() {
+export default function FullWidthGrid(props) {
   const classes = useStyles();
   let theme = createMuiTheme();
   theme = responsiveFontSizes(theme);

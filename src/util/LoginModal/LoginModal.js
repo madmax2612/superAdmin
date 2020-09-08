@@ -34,7 +34,7 @@ export default function ScrollDialog(props) {
   return (
     <div>
       <Dialog
-        fullWidth={true}
+        fullWidth={false}
         maxWidth={maxWidth}
         open={props.isOpen}
         onClose={props.closeModal}

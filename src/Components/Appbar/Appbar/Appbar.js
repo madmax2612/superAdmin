@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import clsx from "clsx";
 import { makeStyles, fade } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
@@ -6,36 +6,25 @@ import Drawer from "@material-ui/core/Drawer";
 import Box from "@material-ui/core/Box";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
-// import List from '@material-ui/core/List';
+import List from "@material-ui/core/List";
 import Typography from "@material-ui/core/Typography";
 import Divider from "@material-ui/core/Divider";
 import IconButton from "@material-ui/core/IconButton";
 import Badge from "@material-ui/core/Badge";
 import Container from "@material-ui/core/Container";
-import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
-// import Link from "@material-ui/core/Link";
 import Avatar from "@material-ui/core/Avatar";
-import MenuIcon from "@material-ui/icons/Menu";
-import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
-import NotificationsIcon from "@material-ui/icons/Notifications";
 import Button from "@material-ui/core/Button";
 import ClickAwayListener from "@material-ui/core/ClickAwayListener";
 import Grow from "@material-ui/core/Grow";
 import Popper from "@material-ui/core/Popper";
 import MenuItem from "@material-ui/core/MenuItem";
 import MenuList from "@material-ui/core/MenuList";
-// import { mainListItems, secondaryListItems } from "../listItems";
-// import Chart from './Chart';
-// import Deposits from "./Deposits";
-// import Orders from "./Orders";
-
-import MessageIcon from "@material-ui/icons/Message";
-import InputBase from "@material-ui/core/InputBase";
-import SearchIcon from "@material-ui/icons/Search";
 import NewList from "../List/NewList";
 import { useStyles } from "./css";
 import { Link, Redirect } from "react-router-dom";
+import { GetLocationListings } from "../../../util/Services/Services";
+import axios from "axios";
 
 export default function AppBar1(props) {
   console.log(props);
@@ -44,6 +33,28 @@ export default function AppBar1(props) {
   const [open, setOpen] = React.useState(true);
   const [open1, setOpen1] = React.useState(false);
   const [redirect, setRedirect] = React.useState(false);
+
+  const [locationNames, setLocationNames] = useState("");
+
+  useEffect(() => {
+    GetLocationListings()
+      .then(res => {
+        console.log(res);
+        setLocationNames(res.data.parking_list);
+      })
+      .catch(err => console.log(err));
+  }, []);
+  console.log(locationNames.name);
+
+  // useEffect(() => {
+  //   axios
+  //     .get(`https://jsonplaceholder.typicode.com/comments`)
+  //     .then(res => {
+  //       console.log(res.data);
+  //       setLocationNames(res.data);
+  //     })
+  //     .catch(err => console.log(err));
+  // }, []);
 
   const handleDrawerOpen = () => {
     setOpen(true);
@@ -123,12 +134,15 @@ export default function AppBar1(props) {
             className={classes.title}
           >
             {/* dropdown */}
+
+
             <div style={props.style}>
-              <select className={classes.appbarDropdown} style={props.style1}>
-                <option>Location</option>
-                <option selected>Goregaon (East)</option>
-                <option>Goregaon (West)</option>
-                <option>Goregaon (East)</option>
+              <select style={props.style1} className={classes.appbarDropdown}>
+              <option>Select Parking</option>
+                {locationNames &&
+                  locationNames.map(res => {
+                    return <option>{res.name}</option>
+                  })}
               </select>
             </div>
 

@@ -12,7 +12,7 @@ export const useStyles = makeStyles(theme => ({
     textTransform: "none",
     backgroundColor: "white",
     color: "#00BBDC",
-    width: "200px",
+    width: "150px",
     height: "40px",
     borderColor: "#00BBDC",
     border: "1px solid #00BBDC",

@@ -174,7 +174,7 @@ export default function SignIn(props) {
                           aria-hidden="true"
                           style={{ margin: "5px" }}
                         ></i>
-                        <span>Mobile No can not be Empty</span>
+                        <span>Mobile No cannot be Empty</span>
                       </div>
                     </div>
                   )}

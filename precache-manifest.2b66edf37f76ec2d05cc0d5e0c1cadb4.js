@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8ef56552e13ad35c0389c6957bea9f63",
+    "revision": "ab0a24a8d7bbcd4f28f2e664fc2afe94",
     "url": "/superAdmin/index.html"
   },
   {
@@ -124,8 +124,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/superAdmin/static/js/20.6a8d2932.chunk.js"
   },
   {
-    "revision": "e2b5b1305cf33a7bf931",
-    "url": "/superAdmin/static/js/21.a77558b2.chunk.js"
+    "revision": "2f61ccec563f532c8399",
+    "url": "/superAdmin/static/js/21.97226f41.chunk.js"
   },
   {
     "revision": "2bc3902a58a764fccc68",
@@ -184,8 +184,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/superAdmin/static/js/main.4b5cc860.chunk.js"
   },
   {
-    "revision": "ed007ae93e5e9e73da82",
-    "url": "/superAdmin/static/js/runtime-main.48d87731.js"
+    "revision": "0e559fc531fd90902166",
+    "url": "/superAdmin/static/js/runtime-main.e1eaf662.js"
   },
   {
     "revision": "39cd4ed62a1f6dcc7a24b0339c61acb3",

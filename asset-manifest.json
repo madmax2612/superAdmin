@@ -15,8 +15,8 @@
     "static/js/5.b110b5a1.chunk.js.map": "/superAdmin/static/js/5.b110b5a1.chunk.js.map",
     "main.js": "/superAdmin/static/js/main.4b5cc860.chunk.js",
     "main.js.map": "/superAdmin/static/js/main.4b5cc860.chunk.js.map",
-    "runtime-main.js": "/superAdmin/static/js/runtime-main.48d87731.js",
-    "runtime-main.js.map": "/superAdmin/static/js/runtime-main.48d87731.js.map",
+    "runtime-main.js": "/superAdmin/static/js/runtime-main.e1eaf662.js",
+    "runtime-main.js.map": "/superAdmin/static/js/runtime-main.e1eaf662.js.map",
     "static/css/8.2e715660.chunk.css": "/superAdmin/static/css/8.2e715660.chunk.css",
     "static/js/8.97954287.chunk.js": "/superAdmin/static/js/8.97954287.chunk.js",
     "static/js/8.97954287.chunk.js.map": "/superAdmin/static/js/8.97954287.chunk.js.map",
@@ -54,8 +54,8 @@
     "static/css/20.2e715660.chunk.css": "/superAdmin/static/css/20.2e715660.chunk.css",
     "static/js/20.6a8d2932.chunk.js": "/superAdmin/static/js/20.6a8d2932.chunk.js",
     "static/js/20.6a8d2932.chunk.js.map": "/superAdmin/static/js/20.6a8d2932.chunk.js.map",
-    "static/js/21.a77558b2.chunk.js": "/superAdmin/static/js/21.a77558b2.chunk.js",
-    "static/js/21.a77558b2.chunk.js.map": "/superAdmin/static/js/21.a77558b2.chunk.js.map",
+    "static/js/21.97226f41.chunk.js": "/superAdmin/static/js/21.97226f41.chunk.js",
+    "static/js/21.97226f41.chunk.js.map": "/superAdmin/static/js/21.97226f41.chunk.js.map",
     "static/js/22.06af5d8c.chunk.js": "/superAdmin/static/js/22.06af5d8c.chunk.js",
     "static/js/22.06af5d8c.chunk.js.map": "/superAdmin/static/js/22.06af5d8c.chunk.js.map",
     "static/js/23.8458c3ef.chunk.js": "/superAdmin/static/js/23.8458c3ef.chunk.js",
@@ -65,7 +65,7 @@
     "static/js/25.33b45c04.chunk.js": "/superAdmin/static/js/25.33b45c04.chunk.js",
     "static/js/25.33b45c04.chunk.js.map": "/superAdmin/static/js/25.33b45c04.chunk.js.map",
     "index.html": "/superAdmin/index.html",
-    "precache-manifest.f257893e7ab2534769ee30eee90f0186.js": "/superAdmin/precache-manifest.f257893e7ab2534769ee30eee90f0186.js",
+    "precache-manifest.2b66edf37f76ec2d05cc0d5e0c1cadb4.js": "/superAdmin/precache-manifest.2b66edf37f76ec2d05cc0d5e0c1cadb4.js",
     "service-worker.js": "/superAdmin/service-worker.js",
     "static/css/10.2e715660.chunk.css.map": "/superAdmin/static/css/10.2e715660.chunk.css.map",
     "static/css/13.2e715660.chunk.css.map": "/superAdmin/static/css/13.2e715660.chunk.css.map",
@@ -133,7 +133,7 @@
     "static/media/whiteMenu-barCloseIcon.svg": "/superAdmin/static/media/whiteMenu-barCloseIcon.0bbcae1b.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.48d87731.js",
+    "static/js/runtime-main.e1eaf662.js",
     "static/js/12.fa59c792.chunk.js",
     "static/js/main.4b5cc860.chunk.js"
   ]

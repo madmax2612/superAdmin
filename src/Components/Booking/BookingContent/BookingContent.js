@@ -94,11 +94,11 @@ export default function FullWidthGrid() {
                 variant="h2"
                 component="h2"
                 className={classes.subtTitle}
-                className={classes.verticalBar}
               >
                 <b>87</b>
               </Typography>
             </MuiThemeProvider>
+            <div className={classes.verticalBar}></div>
           </Grid>
           <Grid item xs={6} sm={6} md={3} lg={3}>
             <Typography
@@ -130,11 +130,11 @@ export default function FullWidthGrid() {
               variant="h2"
               component="h2"
               className={classes.subtTitle}
-              className={classes.verticalBar}
               style={{ color: "#00BBDC" }}
             >
               <b>117</b>
             </Typography>
+            <div className={classes.verticalBar}></div>
           </Grid>
 
           <Grid item xs={6} sm={6} md={3} lg={3}>
@@ -166,10 +166,10 @@ export default function FullWidthGrid() {
               variant="h2"
               component="h2"
               className={classes.subtTitle}
-              className={classes.verticalBar}
             >
               <b>450</b>
             </Typography>
+            <div className={classes.verticalBar}></div>
           </Grid>
           <Grid item xs={6} sm={6} md={3} lg={3}>
             <Typography
@@ -200,10 +200,10 @@ export default function FullWidthGrid() {
               variant="h2"
               component="h2"
               className={classes.subtTitle}
-              className={classes.verticalBar}
             >
               <b>107</b>
             </Typography>
+            <div className={classes.verticalBar}></div>
           </Grid>
 
           {/* card end */}

@@ -870,7 +870,7 @@ export const list = [
       />
     ),
     primary: "Dashboard",
-    to: "/otopark/superadmin/dashboard"
+    to: "/otopark/admin/dashboard"
   },
   {
     icon: (
@@ -881,7 +881,7 @@ export const list = [
       />
     ),
     primary: "Users",
-    to: "/otopark/superadmin/users"
+    to: "/otopark/admin/users"
   },
   {
     icon: (
@@ -892,7 +892,7 @@ export const list = [
       />
     ),
     primary: "Parking",
-    to: "/otopark/superadmin/parking"
+    to: "/otopark/admin/parking"
   },
   {
     icon: (
@@ -903,7 +903,7 @@ export const list = [
       />
     ),
     primary: "Monthly Pass",
-    to: "/otopark/superadmin/montlypass"
+    to: "/otopark/admin/montlypass"
   },
   {
     icon: (
@@ -914,7 +914,7 @@ export const list = [
       />
     ),
     primary: "Booking",
-    to: "/otopark/superadmin/booking"
+    to: "/otopark/admin/booking"
   },
   {
     icon: (
@@ -925,7 +925,7 @@ export const list = [
       />
     ),
     primary: "Hardware",
-    to: "/otopark/superadmin/hardware"
+    to: "/otopark/admin/hardware"
   },
   {
     icon: (
@@ -936,7 +936,7 @@ export const list = [
       />
     ),
     primary: "Support",
-    to: "/otopark/superadmin/support"
+    to: "/otopark/admin/support"
   },
   {
     icon: (
@@ -947,7 +947,7 @@ export const list = [
       />
     ),
     primary: "Payments",
-    to: "/otopark/superadmin/payment"
+    to: "/otopark/admin/payment"
   },
   {
     icon: (
@@ -969,7 +969,7 @@ export const list = [
       />
     ),
     primary: "Notification",
-    to: "/otopark/superadmin/notification"
+    to: "/otopark/admin/notification"
   },
   {
     icon: (
@@ -1376,4 +1376,245 @@ export class MatTable extends Component {
 export default MatTable;
 
 
-    
+///// uploader adervertisement ///////
+
+import React, { useMemo, useEffect, useState } from "react";
+import ReactDOM from "react-dom";
+import { useDropzone } from "react-dropzone";
+
+const baseStyle = {
+  flex: 1,
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  padding: "20px",
+  borderWidth: 2,
+  borderRadius: 2,
+  borderColor: "#eeeeee",
+  borderStyle: "dashed",
+  backgroundColor: "#fafafa",
+  color: "#bdbdbd",
+  outline: "none",
+  transition: "border .24s ease-in-out"
+};
+
+const activeStyle = {
+  borderColor: "#2196f3"
+};
+
+const acceptStyle = {
+  borderColor: "#00e676"
+};
+
+const rejectStyle = {
+  borderColor: "#ff1744"
+};
+
+const thumbsContainer = {
+  display: "flex",
+  flexDirection: "row",
+  flexWrap: "wrap",
+  marginTop: 16,
+  justifyContent: "center"
+};
+
+const thumb = {
+  display: "inline-flex",
+  borderRadius: 2,
+  border: "1px solid #eaeaea",
+  marginBottom: 8,
+  marginRight: 8,
+  width: "350px",
+  height: "132px",
+  padding: 4,
+  boxSizing: "border-box"
+};
+
+const thumbInner = {
+  display: "flex",
+  minWidth: 0,
+  overflow: "hidden"
+};
+
+const img = {
+  display: "block",
+  width: "350px",
+  height: "132px"
+};
+
+const Advertisement = props => {
+  const [files, setFiles] = useState([]);
+  const {
+    getRootProps,
+    getInputProps,
+    isDragActive,
+    isDragAccept,
+    isDragReject,
+    acceptedFiles,
+    open
+  } = useDropzone({
+    accept: "image/*",
+    noClick: true,
+    noKeyboard: true,
+    onDrop: acceptedFiles => {
+      setFiles(
+        acceptedFiles.map(file =>
+          Object.assign(file, {
+            preview: URL.createObjectURL(file)
+          })
+        )
+      );
+    }
+  });
+
+  const style = useMemo(
+    () => ({
+      ...baseStyle,
+      ...(isDragActive ? activeStyle : {}),
+      ...(isDragAccept ? acceptStyle : {}),
+      ...(isDragReject ? rejectStyle : {})
+    }),
+    [isDragActive, isDragReject]
+  );
+
+  const thumbs = files.map(file => (
+    <div style={thumb} key={file.name}>
+      <div style={thumbInner}>
+        <img src={file.preview} style={img} />
+      </div>
+    </div>
+  ));
+
+  useEffect(
+    () => () => {
+      // Make sure to revoke the data uris to avoid memory leaks
+      files.forEach(file => URL.revokeObjectURL(file.preview));
+    },
+    [files]
+  );
+
+  const filepath = acceptedFiles.map(file => (
+    <li key={file.path}>
+      {file.path} - {file.size} bytes
+    </li>
+  ));
+
+  return (
+    <div className="container">
+      <div {...getRootProps({ style })}>
+        <input {...getInputProps()} />
+        <p>Drag 'n' drop some files here</p>
+        <button type="button" onClick={open}>
+          Open File Dialog
+        </button>
+      </div>
+      {/* <aside>
+        <h4>Files</h4>
+        <ul>{filepath}</ul>
+      </aside> */}
+      <aside style={thumbsContainer}>{thumbs}</aside>
+    </div>
+  );
+};
+
+export default Advertisement;
+
+// ReactDOM.render(<StyledDropzone />, document.getElementById("root"));
+
+
+//////n new uploader bro ////////
+
+    import React from "react";
+import ImageUploading from "react-images-uploading";
+
+function AdvertisementContent() {
+  const [images, setImages] = React.useState([]);
+  const maxNumber = 4;
+
+  const onChange = (imageList, addUpdateIndex) => {
+    // data for submit
+    console.log(imageList, addUpdateIndex);
+    setImages(imageList);
+  };
+
+  return (
+    <div className="App">
+      <ImageUploading
+        multiple
+        value={images}
+        onChange={onChange}
+        maxNumber={maxNumber}
+        dataURLKey="data_url"
+      >
+        {({
+          imageList,
+          onImageUpload,
+          onImageRemoveAll,
+          onImageUpdate,
+          onImageRemove,
+          isDragging,
+          dragProps,
+          errors
+        }) => (
+          // write your building UI
+          <div className="upload__image-wrapper">
+            <div>
+              {errors.maxNumber && (
+                <span>Number of selected images exceed maxNumber</span>
+              )}
+              {errors.acceptType && (
+                <span>Your selected file type is not allow</span>
+              )}
+              {errors.maxFileSize && (
+                <span>Selected file size exceed maxFileSize</span>
+              )}
+              {errors.resolution && (
+                <span>Selected file is not match your desired resolution</span>
+              )}
+            </div>
+            <button
+              style={{ backgroundColor: "#00BBDC", color: "red" }}
+              style={isDragging ? { color: "red" } : undefined}
+              onClick={onImageUpload}
+              {...dragProps}
+            >
+              Click or Drop here
+            </button>
+            &nbsp;
+            <button onClick={onImageRemoveAll}>Remove all images</button>
+            <br />
+            <br />
+            {imageList.map((image, index) => (
+              <div key={index} className="image-item">
+                <div style={{}}>
+                  <img
+                    src={image["data_url"]}
+                    alt=""
+                    width="350px"
+                    height="132px"
+                  />
+                  <div className="image-item__btn-wrapper">
+                    <button
+                      style={{
+                        backgroundColor: "#00BBDC",
+
+                        color: "#fff",
+                        fontSize: "15px"
+                      }}
+                      onClick={() => onImageUpdate(index)}
+                    >
+                      Update
+                    </button>
+                    <button onClick={() => onImageRemove(index)}>Remove</button>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+      </ImageUploading>
+    </div>
+  );
+}
+
+export default AdvertisementContent;

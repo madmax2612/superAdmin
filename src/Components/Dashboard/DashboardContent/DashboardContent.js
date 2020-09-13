@@ -77,6 +77,7 @@ export default function FullWidthGrid(props) {
               className={classes.containerAdjust}
             >
               <DashboardCard
+              
                 handleOpenModal={() => {
                   handleOpenModal("2 Wheeler Table");
                 }}

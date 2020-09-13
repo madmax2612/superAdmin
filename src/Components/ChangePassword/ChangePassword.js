@@ -23,7 +23,7 @@ import { useStyles } from "./css";
 import { useForm, Controller } from "react-hook-form";
 import { Router } from "react-router-dom";
 
-export const baseUrl = "/otopark/superadmin";
+export const baseUrl = "/otopark/admin";
 
 export default function ChangePassword() {
   const history = useHistory();

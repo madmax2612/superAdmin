@@ -58,11 +58,11 @@ const NestedList = ({ history }) => {
       {/*List start */}
       <Link
         style={{ textDecoration: "none" }}
-        to="/otopark/superadmin/dashboard"
+        to="/otopark/admin/dashboard"
       >
         <ListItem
           button
-          style={isActive(history, "/otopark/superadmin/dashboard")}
+          style={isActive(history, "/otopark/admin/dashboard")}
         >
           <ListItemIcon>
             <img
@@ -75,8 +75,8 @@ const NestedList = ({ history }) => {
         </ListItem>
       </Link>
 
-      <Link style={{ textDecoration: "none" }} to="/otopark/superadmin/users">
-        <ListItem button style={isActive(history, "/otopark/superadmin/users")}>
+      <Link style={{ textDecoration: "none" }} to="/otopark/admin/users">
+        <ListItem button style={isActive(history, "/otopark/admin/users")}>
           <ListItemIcon>
             <img
               src={require("../../../assets/icons/userIcon.svg")}
@@ -88,10 +88,10 @@ const NestedList = ({ history }) => {
         </ListItem>
       </Link>
 
-      <Link style={{ textDecoration: "none" }} to="/otopark/superadmin/parking">
+      <Link style={{ textDecoration: "none" }} to="/otopark/admin/parking">
         <ListItem
           button
-          style={isActive(history, "/otopark/superadmin/parking")}
+          style={isActive(history, "/otopark/admin/parking")}
         >
           <ListItemIcon>
             <img
@@ -106,11 +106,11 @@ const NestedList = ({ history }) => {
 
       <Link
         style={{ textDecoration: "none" }}
-        to="/otopark/superadmin/montlypass"
+        to="/otopark/admin/montlypass"
       >
         <ListItem
           button
-          style={isActive(history, "/otopark/superadmin/montlypass")}
+          style={isActive(history, "/otopark/admin/montlypass")}
         >
           <ListItemIcon>
             <img
@@ -123,10 +123,10 @@ const NestedList = ({ history }) => {
         </ListItem>
       </Link>
 
-      <Link style={{ textDecoration: "none" }} to="/otopark/superadmin/booking">
+      <Link style={{ textDecoration: "none" }} to="/otopark/admin/booking">
         <ListItem
           button
-          style={isActive(history, "/otopark/superadmin/booking")}
+          style={isActive(history, "/otopark/admin/booking")}
         >
           <ListItemIcon>
             <img
@@ -141,11 +141,11 @@ const NestedList = ({ history }) => {
 
       <Link
         style={{ textDecoration: "none" }}
-        to="/otopark/superadmin/hardware"
+        to="/otopark/admin/hardware"
       >
         <ListItem
           button
-          style={isActive(history, "/otopark/superadmin/hardware")}
+          style={isActive(history, "/otopark/admin/hardware")}
         >
           <ListItemIcon>
             <img
@@ -158,10 +158,10 @@ const NestedList = ({ history }) => {
         </ListItem>
       </Link>
 
-      <Link style={{ textDecoration: "none" }} to="/otopark/superadmin/support">
+      <Link style={{ textDecoration: "none" }} to="/otopark/admin/support">
         <ListItem
           button
-          style={isActive(history, "/otopark/superadmin/support")}
+          style={isActive(history, "/otopark/admin/support")}
         >
           <ListItemIcon>
             <img
@@ -174,10 +174,10 @@ const NestedList = ({ history }) => {
         </ListItem>
       </Link>
 
-      <Link style={{ textDecoration: "none" }} to="/otopark/superadmin/payment">
+      <Link style={{ textDecoration: "none" }} to="/otopark/admin/payment">
         <ListItem
           button
-          style={isActive(history, "/otopark/superadmin/payment")}
+          style={isActive(history, "/otopark/admin/payment")}
         >
           <ListItemIcon>
             <img
@@ -205,11 +205,11 @@ const NestedList = ({ history }) => {
 
       <Link
         style={{ textDecoration: "none" }}
-        to="/otopark/superadmin/notification"
+        to="/otopark/admin/notification"
       >
         <ListItem
           button
-          style={isActive(history, "/otopark/superadmin/notification")}
+          style={isActive(history, "/otopark/admin/notification")}
         >
           <ListItemIcon>
             <img
@@ -221,6 +221,25 @@ const NestedList = ({ history }) => {
           <ListItemText primary="Notification" />
         </ListItem>
       </Link>
+
+      {/* <Link
+        style={{ textDecoration: "none" }}
+        to="/otopark/admin/advertisement"
+      >
+        <ListItem
+          button
+          style={isActive(history, "/otopark/admin/advertisement")}
+        >
+          <ListItemIcon>
+            <img
+              src={require("../../../assets/icons/notificationIcon.svg")}
+              width="25px"
+              height="25px"
+            />
+          </ListItemIcon>
+          <ListItemText primary="Advertisement" />
+        </ListItem>
+      </Link> */}
 
       {/* <Link style={{ textDecoration: "none" }} to="#">
         <ListItem button style={isActive(history, "#")}>

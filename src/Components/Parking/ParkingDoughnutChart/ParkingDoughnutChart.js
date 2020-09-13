@@ -1,8 +1,6 @@
 import React from "react";
-import { Bar, Line, Pie, Doughnut } from "react-chartjs-2";
-import { CustomTooltips } from "@coreui/coreui-plugin-chartjs-custom-tooltips";
+import { Doughnut } from "react-chartjs-2";
 import { useStyles } from "./css";
-import { positions } from "@material-ui/system";
 
 export default function DoughnutChart() {
   const classes = useStyles();
@@ -22,7 +20,6 @@ export default function DoughnutChart() {
     cutoutPercentage: 80,
     tooltips: {
       enabled: true
-      // custom: CustomTooltips
     },
     maintainAspectRatio: true,
     responsive: true,
@@ -40,6 +37,11 @@ export default function DoughnutChart() {
           display: false
         }
       ]
+    },
+    plugins: {
+      datalabels: {
+        display: false
+      }
     },
     elements: {
       line: {

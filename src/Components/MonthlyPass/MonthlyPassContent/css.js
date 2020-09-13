@@ -85,12 +85,13 @@ export const useStyles = makeStyles(theme => ({
     fontWeight: "bold"
   },
   verticalBar: {
-    marginTop: "-20px",
+    marginTop: "-125px",
     height: "120px",
     borderRight: "3px solid #959595",
     padding: "0.5em",
     [theme.breakpoints.down("sm")]: {
-      height: "80px"
+      marginTop: "-95px",
+      height: "100px"
     }
   },
   dropdown: {

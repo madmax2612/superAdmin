@@ -60,7 +60,7 @@ export default function FullWidthGrid() {
             <br />
             <br />
             <Link
-              to="/otopark/superadmin/rfid"
+              to="/otopark/admin/rfid"
               style={{ textDecoration: "none" }}
             >
               <Button className={classes.button} variant="outlined">
@@ -80,7 +80,7 @@ export default function FullWidthGrid() {
             <br />
             <br />
             <Link
-              to="/otopark/superadmin/ticketdispenser"
+              to="/otopark/admin/ticketdispenser"
               style={{ textDecoration: "none" }}
             >
               <Button className={classes.button} variant="outlined">

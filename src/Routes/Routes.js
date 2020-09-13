@@ -26,6 +26,8 @@ const ChangePassword = lazy(() =>
   import("../Components/ChangePassword/ChangePassword")
 );
 
+
+
 const NotFound = lazy(() => import("../util/NotFound/NotFound"));
 
 export const Routes = () => {
@@ -33,53 +35,49 @@ export const Routes = () => {
     <HashRouter>
       <Suspense fallback={<Loader />}>
         <Switch>
-          <Route exact path="/otopark/superadmin/login" component={LoginPage} />
-          {/* .get(`https://jsonplaceholder.typicode.com/todos`) */}
+          <Route exact path="/otopark/admin/login" component={LoginPage} />
           <Route
             exact
-            path="/otopark/superadmin/dashboard"
+            path="/otopark/admin/dashboard"
             component={Dashboard}
           />
-          <Route exact path="/otopark/superadmin/users" component={UserDash} />
-          <Route exact path="/otopark/superadmin/parking" component={Parking} />
-          <Route exact path="/otopark/superadmin/booking" component={Booking} />
-          <Route exact path="/otopark/superadmin/payment" component={Payment} />
+          <Route exact path="/otopark/admin/users" component={UserDash} />
+          <Route exact path="/otopark/admin/parking" component={Parking} />
+          <Route exact path="/otopark/admin/booking" component={Booking} />
+          <Route exact path="/otopark/admin/payment" component={Payment} />
           <Route
             exact
-            path="/otopark/superadmin/hardware"
+            path="/otopark/admin/hardware"
             component={Hardware}
           />
-          <Route exact path="/otopark/superadmin/support" component={Support} />
+          <Route exact path="/otopark/admin/support" component={Support} />
           <Route
             exact
-            path="/otopark/superadmin/notification"
+            path="/otopark/admin/notification"
             component={Notification}
           />
 
-          <Route exact path="/otopark/superadmin/rfid" component={RFID} />
+          <Route exact path="/otopark/admin/rfid" component={RFID} />
           <Route
             exact
-            path="/otopark/superadmin/montlypass"
+            path="/otopark/admin/montlypass"
             component={MonthlyPass}
           />
 
           <Route
             exact
-            path="/otopark/superadmin/ticketdispenser"
+            path="/otopark/admin/ticketdispenser"
             component={TicketDispenser}
           />
-          {/* <Route
-            exact
-            path="/otopark/superadmin/settings"
-            component={Settings}
-          /> */}
-          <Route exact path="/otopark/superadmin/profile" component={Profile} />
+          
+          <Route exact path="/otopark/admin/profile" component={Profile} />
           <Route
             exact
-            path="/otopark/superadmin/changepassword"
+            path="/otopark/admin/changepassword"
             component={ChangePassword}
           />
 
+         
           <Route exact path="*" component={NotFound} />
         </Switch>
       </Suspense>

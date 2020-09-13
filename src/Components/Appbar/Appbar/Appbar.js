@@ -98,7 +98,7 @@ export default function AppBar1(props) {
   const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
 
   if (redirect) {
-    return <Redirect to="/otopark/superadmin/profile" />;
+    return <Redirect to="/otopark/admin/profile" />;
   }
   return (
     <div className={classes.root}>
@@ -234,7 +234,7 @@ export default function AppBar1(props) {
                         </Link>
 
                         <Link
-                          to="/otopark/superadmin/login"
+                          to="/otopark/admin/login"
                           style={{ color: "black", textDecoration: "none" }}
                         >
                           <MenuItem onClick={handleClose}>Logout</MenuItem>

@@ -48,7 +48,7 @@ export default function FullWidthGrid() {
   };
 
   if (redirect) {
-    return <Redirect to="/otopark/superadmin/dashboard" />;
+    return <Redirect to="/otopark/admin/dashboard" />;
   }
 
   return (
@@ -71,7 +71,7 @@ export default function FullWidthGrid() {
                   variant="h4"
                   className={classes.heading}
                 >
-                  <Link to="/otopark/superadmin/dashboard">
+                  <Link to="/otopark/admin/dashboard">
                     {visible ? (
                       ""
                     ) : (
@@ -256,7 +256,7 @@ export default function FullWidthGrid() {
                   <div className={classes.root}>
                     <List component="nav" aria-label="main mailbox folders">
                       <Link
-                        to="/otopark/superadmin/changepassword"
+                        to="/otopark/admin/changepassword"
                         style={{ color: "black", textDecoration: "none" }}
                       >
                         <ListItem button>

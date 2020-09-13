@@ -102,10 +102,10 @@ export default function FullWidthGrid() {
                 variant="h2"
                 component="h2"
                 className={classes.subtTitle}
-                className={classes.verticalBar}
               >
                 <b>98</b>
               </Typography>
+              <div className={classes.verticalBar}></div>
             </MuiThemeProvider>
           </Grid>
 
@@ -140,10 +140,10 @@ export default function FullWidthGrid() {
               component="h2"
               style={{ color: "#00BBDC" }}
               className={classes.subtTitle}
-              className={classes.verticalBar}
             >
               <b>450</b>
             </Typography>
+            <div className={classes.verticalBar}></div>
           </Grid>
           <Grid item xs={6} sm={6} md={3} lg>
             <Typography
@@ -176,10 +176,10 @@ export default function FullWidthGrid() {
               variant="h2"
               component="h2"
               className={classes.subtTitle}
-              className={classes.verticalBar}
             >
               <b>107</b>
             </Typography>
+            <div className={classes.verticalBar}></div>
           </Grid>
           <Grid item xs={6} sm={6} md={3} lg>
             <Typography
@@ -211,10 +211,10 @@ export default function FullWidthGrid() {
               variant="h2"
               component="h2"
               className={classes.subtTitle}
-              className={classes.verticalBar}
             >
               <b>107</b>
             </Typography>
+            <div className={classes.verticalBar}></div>
           </Grid>
           <Grid item xs={6} sm={6} md={3} lg>
             <Typography
@@ -246,10 +246,10 @@ export default function FullWidthGrid() {
               variant="h2"
               component="h2"
               className={classes.subtTitle}
-              className={classes.verticalBar}
             >
               <b>205</b>
             </Typography>
+            <div className={classes.verticalBar}></div>
           </Grid>
           {/* card end */}
 

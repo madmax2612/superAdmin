@@ -31,11 +31,12 @@ export const useStyles = makeStyles(theme => ({
     // }
   },
   verticalBar: {
-    marginTop: "-20px",
-    height: "120px",
+    marginTop: "-100px",
+    height: "100px",
     borderRight: "3px solid #959595",
     padding: "0.5em",
     [theme.breakpoints.down("sm")]: {
+      marginTop: "-70px",
       height: "80px"
     }
   }

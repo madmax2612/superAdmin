@@ -22,7 +22,7 @@ import LoginModal from "../../util/LoginModal/LoginModal";
 import { UserLogin } from "../../util/Services/Services";
 import { Link, HashRouter, Redirect } from "react-router-dom";
 
-export const baseUrl = "/otopark/superadmin";
+export const baseUrl = "/otopark/admin";
 
 export default function SignIn(props) {
   const history = useHistory();
@@ -80,7 +80,7 @@ export default function SignIn(props) {
   };
 
   if (redirect) {
-    return <Redirect to="/otopark/superadmin/dashboard" />;
+    return <Redirect to="/otopark/admin/dashboard" />;
   }
   // const styles = {
   //   media: {
@@ -234,7 +234,7 @@ export default function SignIn(props) {
                     </div>
                     <div align="right">
                       <Link
-                        to="/otopark/superadmin/changepassword"
+                        to="/otopark/admin/changepassword"
                         variant="body2"
                         style={{ color: "#172B4D" }}
                       >

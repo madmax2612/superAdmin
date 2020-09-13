@@ -35,11 +35,7 @@ export default function FullWidthGrid() {
         <br />
         <br />
         <Grid container spacing={1}>
-          <Grid item sm={12}>
-            <Paper className={classes.paper}>
-              <PaymentBarChart />
-            </Paper>
-          </Grid>
+         
 
           <Grid item xs={12} sm={12}>
             <br />
@@ -130,7 +126,11 @@ export default function FullWidthGrid() {
             <br />
           </Grid>
           {/* card end */}
-
+          <Grid item sm={12}>
+            <Paper className={classes.paper}>
+              <PaymentBarChart />
+            </Paper>
+          </Grid>
           <Grid item xs={12}></Grid>
 
           <Grid item xs={12}>

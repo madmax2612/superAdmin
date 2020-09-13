@@ -6,8 +6,11 @@ export const useStyles = makeStyles(theme => ({
     minWidth: 175,
     height: "190px",
     paddingBottom: "20px",
-    borderRadius: "10px"
+    borderRadius: "10px",
     // overflowX: "auto"
+    '&:hover':{
+      cursor:'pointer'
+    }
   },
   bullet: {
     display: "inline-block",

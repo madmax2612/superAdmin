@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios";
-export const URL ="https://www.otopark.in/api/"// live-website 
+export const URL = "https://www.otopark.in/api/"; // live-website
 // export const URL = "http://13.233.172.20/api/"; // PROD URL
 // export const URL="http://127.0.0.1:8000/api/" // LOCAL URL
 
